@@ -1,5 +1,5 @@
 //
-//  ChatsVC.swift
+//  NewsVC.swift
 //  AMMChat
 //
 //  Created by Vlad Krupenko on 30.04.17.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ChatsVC: MainVC {
-    
+class New: MainVC {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,5 +21,4 @@ class ChatsVC: MainVC {
         // Dispose of any resources that can be recreated.
     }
     
-
 }
