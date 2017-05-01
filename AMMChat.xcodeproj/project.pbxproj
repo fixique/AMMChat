@@ -10,13 +10,18 @@
 		4D0D84501EB545CF006D9996 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D844F1EB545CF006D9996 /* AppDelegate.swift */; };
 		4D0D84521EB545CF006D9996 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D84511EB545CF006D9996 /* MainVC.swift */; };
 		4D0D84551EB545CF006D9996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D84531EB545CF006D9996 /* Main.storyboard */; };
-		4D0D84571EB545CF006D9996 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D84561EB545CF006D9996 /* Assets.xcassets */; };
 		4D0D845A1EB545CF006D9996 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D0D84581EB545CF006D9996 /* LaunchScreen.storyboard */; };
 		4D0D84621EB54A6F006D9996 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D84611EB54A6F006D9996 /* MenuVC.swift */; };
 		4D0D84641EB54D2F006D9996 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D84631EB54D2F006D9996 /* Interactor.swift */; };
 		4D0D84681EB54E56006D9996 /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D84671EB54E56006D9996 /* PresentMenuAnimator.swift */; };
 		4D0D846A1EB54E9E006D9996 /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D84691EB54E9E006D9996 /* MenuHelper.swift */; };
 		4D0D846C1EB556B7006D9996 /* DismissMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D846B1EB556B7006D9996 /* DismissMenuAnimator.swift */; };
+		4D0D846E1EB6188C006D9996 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D846D1EB6188C006D9996 /* ChatsVC.swift */; };
+		4DCD87461EB6316D00B5177F /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD87451EB6316D00B5177F /* NewsVC.swift */; };
+		4DCD87481EB66FA000B5177F /* Mark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD87471EB66FA000B5177F /* Mark.jpg */; };
+		4DCD874A1EB68B3C00B5177F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD87491EB68B3C00B5177F /* MenuCell.swift */; };
+		4DCD874F1EB68C6B00B5177F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD874E1EB68C6B00B5177F /* MenuItem.swift */; };
+		4DCD87511EB6944A00B5177F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD87501EB6944A00B5177F /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +29,6 @@
 		4D0D844F1EB545CF006D9996 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D0D84511EB545CF006D9996 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4D0D84541EB545CF006D9996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4D0D84561EB545CF006D9996 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0D84591EB545CF006D9996 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D0D845B1EB545CF006D9996 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D0D84611EB54A6F006D9996 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -32,6 +36,12 @@
 		4D0D84671EB54E56006D9996 /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
 		4D0D84691EB54E9E006D9996 /* MenuHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHelper.swift; sourceTree = "<group>"; };
 		4D0D846B1EB556B7006D9996 /* DismissMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissMenuAnimator.swift; sourceTree = "<group>"; };
+		4D0D846D1EB6188C006D9996 /* ChatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		4DCD87451EB6316D00B5177F /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		4DCD87471EB66FA000B5177F /* Mark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mark.jpg; sourceTree = "<group>"; };
+		4DCD87491EB68B3C00B5177F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		4DCD874E1EB68C6B00B5177F /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		4DCD87501EB6944A00B5177F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +74,48 @@
 		4D0D844E1EB545CF006D9996 /* AMMChat */ = {
 			isa = PBXGroup;
 			children = (
-				4D0D84691EB54E9E006D9996 /* MenuHelper.swift */,
+				4DCD874D1EB68C4000B5177F /* Controller */,
+				4DCD874C1EB68C3C00B5177F /* Model */,
+				4DCD874B1EB68C3700B5177F /* View */,
 				4D0D844F1EB545CF006D9996 /* AppDelegate.swift */,
-				4D0D84511EB545CF006D9996 /* MainVC.swift */,
-				4D0D84611EB54A6F006D9996 /* MenuVC.swift */,
 				4D0D84531EB545CF006D9996 /* Main.storyboard */,
-				4D0D84561EB545CF006D9996 /* Assets.xcassets */,
 				4D0D84581EB545CF006D9996 /* LaunchScreen.storyboard */,
+				4DCD87501EB6944A00B5177F /* Assets.xcassets */,
 				4D0D845B1EB545CF006D9996 /* Info.plist */,
+				4DCD87471EB66FA000B5177F /* Mark.jpg */,
+			);
+			path = AMMChat;
+			sourceTree = "<group>";
+		};
+		4DCD874B1EB68C3700B5177F /* View */ = {
+			isa = PBXGroup;
+			children = (
 				4D0D84631EB54D2F006D9996 /* Interactor.swift */,
+				4DCD87491EB68B3C00B5177F /* MenuCell.swift */,
+				4D0D84691EB54E9E006D9996 /* MenuHelper.swift */,
 				4D0D84671EB54E56006D9996 /* PresentMenuAnimator.swift */,
 				4D0D846B1EB556B7006D9996 /* DismissMenuAnimator.swift */,
 			);
-			path = AMMChat;
+			name = View;
+			sourceTree = "<group>";
+		};
+		4DCD874C1EB68C3C00B5177F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DCD874E1EB68C6B00B5177F /* MenuItem.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4DCD874D1EB68C4000B5177F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D0D84611EB54A6F006D9996 /* MenuVC.swift */,
+				4D0D84511EB545CF006D9996 /* MainVC.swift */,
+				4D0D846D1EB6188C006D9996 /* ChatsVC.swift */,
+				4DCD87451EB6316D00B5177F /* NewsVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCD87481EB66FA000B5177F /* Mark.jpg in Resources */,
 				4D0D845A1EB545CF006D9996 /* LaunchScreen.storyboard in Resources */,
-				4D0D84571EB545CF006D9996 /* Assets.xcassets in Resources */,
+				4DCD87511EB6944A00B5177F /* Assets.xcassets in Resources */,
 				4D0D84551EB545CF006D9996 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,9 +196,13 @@
 				4D0D84521EB545CF006D9996 /* MainVC.swift in Sources */,
 				4D0D84501EB545CF006D9996 /* AppDelegate.swift in Sources */,
 				4D0D846C1EB556B7006D9996 /* DismissMenuAnimator.swift in Sources */,
+				4D0D846E1EB6188C006D9996 /* ChatsVC.swift in Sources */,
 				4D0D84641EB54D2F006D9996 /* Interactor.swift in Sources */,
+				4DCD874A1EB68B3C00B5177F /* MenuCell.swift in Sources */,
 				4D0D84681EB54E56006D9996 /* PresentMenuAnimator.swift in Sources */,
+				4DCD874F1EB68C6B00B5177F /* MenuItem.swift in Sources */,
 				4D0D84621EB54A6F006D9996 /* MenuVC.swift in Sources */,
+				4DCD87461EB6316D00B5177F /* NewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +366,7 @@
 				4D0D84601EB545CF006D9996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

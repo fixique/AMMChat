@@ -13,7 +13,7 @@ class PresentMenuAnimator: NSObject {
 
 extension PresentMenuAnimator : UIViewControllerAnimatedTransitioning {
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 0.6
+        return 0.4
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

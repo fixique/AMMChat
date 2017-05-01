@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol MenuActionDelegate {
+    func openSegue(_ segueName: String, sender: AnyObject?)
+    func selectTab(_ index: Int)
+}
+
 class MainVC: UIViewController {
     
     let interactor = Interactor()
@@ -26,7 +31,7 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "openMenu", sender: nil)
     }
     
-    @IBAction func edgePanGesture(sender: UIScreenEdgePanGestureRecognizer) {
+    @IBAction func edgePanGesture(_ sender: UIScreenEdgePanGestureRecognizer) {
         let translation = sender.translation(in: view)
         
         let progress = MenuHelper.calculateProgress(translationInView: translation, viewBounds: view.bounds, direction: .Right)
@@ -38,12 +43,12 @@ class MainVC: UIViewController {
                 self.performSegue(withIdentifier: "openMenu", sender: nil)
         }
     }
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationViewController = segue.destination as? MenuVC {
             destinationViewController.transitioningDelegate = self
             destinationViewController.interactor = interactor
+            destinationViewController.menuActionDelegate = self
         }
     }
 
@@ -67,3 +72,17 @@ extension MainVC : UIViewControllerTransitioningDelegate {
     }
     
 }
+
+extension MainVC : MenuActionDelegate {
+    func openSegue(_ segueName: String, sender: AnyObject?) {
+        dismiss(animated: true){
+            self.performSegue(withIdentifier: segueName, sender: sender)
+        }
+    }
+    func selectTab(_ index: Int){
+        dismiss(animated: true){
+            self.tabBarController?.selectedIndex = index
+        }
+    }
+}
+
