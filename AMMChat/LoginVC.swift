@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     
@@ -29,6 +31,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         singleTapGestureRecognizer.cancelsTouchesInView = false
         scrollView.addGestureRecognizer(singleTapGestureRecognizer)
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("LOG: ID found in keychain. View presented by LoginVC")
+            performSegue(withIdentifier: "goToChat", sender: nil)
+        }
     }
     
     func tapMethod(sender: UITapGestureRecognizer) {
@@ -60,8 +69,79 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     
     @IBAction func loginBtnPressed(_ sender: Any) {
+        guard emailTextField.text != "", passwordTextField.text != "" else {
         
+            let alertController = UIAlertController(title: "Ошибка", message: "Пожалуйста введите email и пароль", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+            return
+        }
+        
+        if let email = emailTextField.text, let pwd = passwordTextField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("LOG: Email user authenticated with Firebase")
+                    if let user = user {
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                    }
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            let alertController = UIAlertController(title: "Ошибка", message: "Неудалось зарегистрировать пользователя", preferredStyle: .alert)
+                            let defaultAction = UIAlertAction(title: "Ок", style: .cancel, handler: nil)
+                            alertController.addAction(defaultAction)
+                            self.present(alertController, animated: true, completion: nil)
+                        } else {
+                            print("LOG: Successfuly authenticated with firebase")
+                            if let user = user {
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
+                            }
+                        }
+                    })
+                }
+            })
+        }
+        
+    }
+    
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("LOG: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToChat", sender: nil)
     }
 
  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

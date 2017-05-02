@@ -23,11 +23,14 @@
 		4D6AA9801EB7E1BF0049EC99 /* LoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA97F1EB7E1BF0049EC99 /* LoginBtn.swift */; };
 		4D6AA9821EB7E32D0049EC99 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9811EB7E32D0049EC99 /* LoginTextField.swift */; };
 		4D6AA9841EB7F30C0049EC99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9831EB7F30C0049EC99 /* LoginVC.swift */; };
+		4D6AA9861EB805D40049EC99 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D6AA9851EB805D40049EC99 /* GoogleService-Info.plist */; };
+		4D6AA98A1EB8068E0049EC99 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9891EB8068E0049EC99 /* DataService.swift */; };
 		4DCD87461EB6316D00B5177F /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD87451EB6316D00B5177F /* New.swift */; };
 		4DCD87481EB66FA000B5177F /* Mark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD87471EB66FA000B5177F /* Mark.jpg */; };
 		4DCD874A1EB68B3C00B5177F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD87491EB68B3C00B5177F /* MenuCell.swift */; };
 		4DCD874F1EB68C6B00B5177F /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD874E1EB68C6B00B5177F /* MenuItem.swift */; };
 		4DCD87511EB6944A00B5177F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DCD87501EB6944A00B5177F /* Assets.xcassets */; };
+		C2AA9444859F46ED1BFD3314 /* Pods_AMMChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D508D875FB1E1E3A109965 /* Pods_AMMChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +52,16 @@
 		4D6AA97F1EB7E1BF0049EC99 /* LoginBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBtn.swift; sourceTree = "<group>"; };
 		4D6AA9811EB7E32D0049EC99 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		4D6AA9831EB7F30C0049EC99 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4D6AA9851EB805D40049EC99 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4D6AA9891EB8068E0049EC99 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		4DCD87451EB6316D00B5177F /* New.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		4DCD87471EB66FA000B5177F /* Mark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mark.jpg; sourceTree = "<group>"; };
 		4DCD87491EB68B3C00B5177F /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		4DCD874E1EB68C6B00B5177F /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		4DCD87501EB6944A00B5177F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		527BD915295CE44576B256DD /* Pods-AMMChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMMChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AMMChat/Pods-AMMChat.debug.xcconfig"; sourceTree = "<group>"; };
+		636BF993029F73359F508042 /* Pods-AMMChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AMMChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-AMMChat/Pods-AMMChat.release.xcconfig"; sourceTree = "<group>"; };
+		71D508D875FB1E1E3A109965 /* Pods_AMMChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AMMChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,17 +69,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AA9444859F46ED1BFD3314 /* Pods_AMMChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114AE3592A5BAECFF3F2FFC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71D508D875FB1E1E3A109965 /* Pods_AMMChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D0D84431EB545CF006D9996 = {
 			isa = PBXGroup;
 			children = (
 				4D0D844E1EB545CF006D9996 /* AMMChat */,
 				4D0D844D1EB545CF006D9996 /* Products */,
+				6AE2F10EE44353AB0BC6F269 /* Pods */,
+				114AE3592A5BAECFF3F2FFC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +105,7 @@
 		4D0D844E1EB545CF006D9996 /* AMMChat */ = {
 			isa = PBXGroup;
 			children = (
+				4D6AA9881EB806720049EC99 /* Service */,
 				4DCD874D1EB68C4000B5177F /* Controller */,
 				4DCD874C1EB68C3C00B5177F /* Model */,
 				4DCD874B1EB68C3700B5177F /* View */,
@@ -94,9 +114,18 @@
 				4D0D84581EB545CF006D9996 /* LaunchScreen.storyboard */,
 				4DCD87501EB6944A00B5177F /* Assets.xcassets */,
 				4D0D845B1EB545CF006D9996 /* Info.plist */,
+				4D6AA9851EB805D40049EC99 /* GoogleService-Info.plist */,
 				4DCD87471EB66FA000B5177F /* Mark.jpg */,
 			);
 			path = AMMChat;
+			sourceTree = "<group>";
+		};
+		4D6AA9881EB806720049EC99 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4D6AA9891EB8068E0049EC99 /* DataService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 		4DCD874B1EB68C3700B5177F /* View */ = {
@@ -136,6 +165,15 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		6AE2F10EE44353AB0BC6F269 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				527BD915295CE44576B256DD /* Pods-AMMChat.debug.xcconfig */,
+				636BF993029F73359F508042 /* Pods-AMMChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D0D845E1EB545CF006D9996 /* Build configuration list for PBXNativeTarget "AMMChat" */;
 			buildPhases = (
+				4F3FF464405E66691D612DF6 /* [CP] Check Pods Manifest.lock */,
 				4D0D84481EB545CF006D9996 /* Sources */,
 				4D0D84491EB545CF006D9996 /* Frameworks */,
 				4D0D844A1EB545CF006D9996 /* Resources */,
+				0CA561D4BCBA0DD4393FD282 /* [CP] Embed Pods Frameworks */,
+				335C358082EC62E3157AFBCC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,12 +239,61 @@
 			files = (
 				4DCD87481EB66FA000B5177F /* Mark.jpg in Resources */,
 				4D0D845A1EB545CF006D9996 /* LaunchScreen.storyboard in Resources */,
+				4D6AA9861EB805D40049EC99 /* GoogleService-Info.plist in Resources */,
 				4DCD87511EB6944A00B5177F /* Assets.xcassets in Resources */,
 				4D0D84551EB545CF006D9996 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA561D4BCBA0DD4393FD282 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMMChat/Pods-AMMChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		335C358082EC62E3157AFBCC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AMMChat/Pods-AMMChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F3FF464405E66691D612DF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D0D84481EB545CF006D9996 /* Sources */ = {
@@ -219,6 +309,7 @@
 				4D0D84501EB545CF006D9996 /* AppDelegate.swift in Sources */,
 				4D6AA97E1EB7929B0049EC99 /* TableViewCell.swift in Sources */,
 				4D0D846C1EB556B7006D9996 /* DismissMenuAnimator.swift in Sources */,
+				4D6AA98A1EB8068E0049EC99 /* DataService.swift in Sources */,
 				4D0D84641EB54D2F006D9996 /* Interactor.swift in Sources */,
 				4D6AA9761EB788F70049EC99 /* NewsVC.swift in Sources */,
 				4D6AA9801EB7E1BF0049EC99 /* LoginBtn.swift in Sources */,
@@ -347,6 +438,7 @@
 		};
 		4D0D845F1EB545CF006D9996 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527BD915295CE44576B256DD /* Pods-AMMChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;
@@ -360,6 +452,7 @@
 		};
 		4D0D84601EB545CF006D9996 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 636BF993029F73359F508042 /* Pods-AMMChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JE6A9LTMD3;

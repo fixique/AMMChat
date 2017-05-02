@@ -1,0 +1,1974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008E2EA0E6AA8CCDBE5EF05C69B4628D /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DF76454A689EF6A9146E50C25B5BC /* KeychainItemAccessibility.swift */; };
+		0509DCA4F20F08B6342C7B400824A6B3 /* ByvUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AF9841FD67D641D239AF1BF7057BDFD /* ByvUtils-dummy.m */; };
+		054443D16EBF9DD512C69DC15D184C5C /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8240F6B38A073C83B5A01509F7D0540B /* id.lproj */; };
+		07152B0337E933B136E9E0D6E90FB8C5 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF488E0143DF90B5F09FFA990FC8A27E /* TOCropOverlayView.m */; };
+		07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1025FCD6DB773CEEC6E8422B6CC40729 /* GTMSessionFetcherLogging.m */; };
+		0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0ADBCBE17ED8BE33A10F6008436A2DD /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07A6A283734C50DE8E7CAE318BD1C1D4 /* ByvUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4FC416F7D7215A99CB408F6C19D493 /* ByvUtils.framework */; };
+		09ACC2565F535EBA898B49BC58E72B9A /* TOCropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FEF68389F89891723E344BAC0CFB1D /* TOCropViewController-dummy.m */; };
+		0AB5343B433590442B041B0811BACD4A /* SwiftKeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 952290BF1A4F6522ED86F8026295AAAD /* SwiftKeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1181220F3FF4811738DBCEB2A0D296E9 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E332FC934FE361595BA0809A86144F58 /* TOCropScrollView.m */; };
+		11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = B7F82905086E7A7A3E62F766F1544798 /* GTMNSDictionary+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		165C1FA64BC1B6872B194C4A1F645D4F /* TOCropViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B0DB78133D010B0B1EE60D31147E1FF /* TOCropViewController.framework */; };
+		177FF04E316F921932BF736AA9D53DCB /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72154DC8733065682DF88F515F403983 /* UIImage+CropRotate.m */; };
+		17B92B1592BC19674EC35A8CF2123743 /* ByvImagePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B432EE7E9F62E2F27F784CFD0D5E0A1 /* ByvImagePicker-dummy.m */; };
+		189CC2E649368E761DC2B80DCB9B68A7 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 770A9F791D22041005CC8B4D3F0CAD05 /* es.lproj */; };
+		18B269A9171F05B48CBB0F8CCBF51E04 /* SwiftKeychainWrapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BE4A07A30898CD445C3D1CB36621B /* SwiftKeychainWrapper-dummy.m */; };
+		19B0186FF3411CBA6EB440FFD989AADB /* ByvUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B62BAC793B8397A3F37F4CCBBCEB41 /* ByvUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3C68C560C4BB5C4A26248D6EAF61EC /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F9B999DFAA1052294448B64C77434B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		2172D0E66E5B6321E289AE922488B9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		21A5D6FDD8EA5A5B3876B5E726B4351F /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04202BB917B55660F8AFD9AB3984355 /* UIImage+extension.swift */; };
+		22419B1E76D8B5647E05C3FB9953F8AD /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B48D52CF369BE11A583087C1F3B797 /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2780964749DC0D086876E1D24112DA3F /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 419FDCFEA2DBCF319D1CFEC138EC148C /* TOCropToolbar.m */; };
+		279EAD5C5D9D44236D89AD8830CCF0DF /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C3DD8A422459489A161DBC2C4D283F26 /* zh-Hans.lproj */; };
+		2BF86444EEE97DDBBAA0DAAD84929AD6 /* TOCropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99FB76E2C032D8C7DA6431DEDC5F1184 /* TOCropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E13BB841A85A381A2F45F8CDD28F9D7 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 44834AD4D4898E94D1B046BC5E4F322D /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E3257B453CEECC78DA4B3682613AA42 /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4732B25FCF74CD98363443C115867C99 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CE6301A8042C02748A5DBD95AC9ED1 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 063964A21029ED1D788E6618BAD6F8BF /* GoogleToolboxForMac-dummy.m */; };
+		352BA2095D265F35BE11539DD19BB1E5 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE131ADCF2A35CBC42F5B43AEEA9CC0 /* UIColor+extension.swift */; };
+		3B253E4E8B27312471F6044D91457F8C /* UIViewController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB89076E2439D8FD0241F1EF36E0550 /* UIViewController+extension.swift */; };
+		3FF67AC426B16535E4BAF6C4AEAB0FBD /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0827E04D7FF4CB11697F33A33EBC6B /* KeychainWrapper.swift */; };
+		4585655178659F99B1DF8B907DC7A300 /* Pods-AMMChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D059061D50BE0057A3C2DC97EFF970B0 /* Pods-AMMChat-dummy.m */; };
+		4787C92B48FE431FA28D6968D32B02C9 /* SwiftKeychainWrapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9857181268401BD4B4D8EA6F3745BE2 /* SwiftKeychainWrapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BEC0D1A42814BD8CF65D97481E0F79 /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55D1857301D01A30D8FE8FBC04E2AD0B /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 799294CB51FADD799E22A9526B589AEC /* ko.lproj */; };
+		5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 972BE7B418675EA18C8083712CE7749F /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		604DD558728F3929E65DF1DA1BF70221 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = D526B3B5F815C274679C613600097E1A /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64475DF23E99A804437904F3FCAA3736 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB6A929A06BC4F292B57B725085E4A1 /* TOCropViewController.m */; };
+		64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9F4B692F950C74C272FD6F2450D817 /* GTMSessionFetcher.m */; };
+		65B56BD3DBC9B81BB008219D0BA735A9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D702C8A66E00D6352419AB6D80C5B5B7 /* Security.framework */; };
+		66A17088D89BA82E03F7A9CA38AEA7A0 /* Pods-AMMChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCFDF81B0FC62CEE5486E6FBCEB68242 /* Pods-AMMChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68DD41F90E6B9996BCCA0FD63F59300A /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFF9421850FA6D943F1AB4B6F8C451A /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		692C72002221512DFC2955829126C531 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02498426AC4DD95B4ACCA459DBEBEF2B /* TOCropView.m */; };
+		6B240F3BFBAD5609C87DE968AB1027C1 /* URL+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6DECEDF028423335868787E374113B /* URL+extension.swift */; };
+		6C328783C082756E570E99A470C416C6 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 89E155AE284B9576346D6D01B103B47D /* it.lproj */; };
+		6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB30F8C7719E3B68B6285294CF54EC9 /* GTMSessionFetcher-dummy.m */; };
+		744BE0510936F8034E66FC14D8785268 /* ByvImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A5235882571109B1ABA462293F87A55 /* ByvImagePicker.swift */; };
+		7FC7BB77BD10C887444A494799862E71 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0FE62667F3AE4A933C69BF7B68C5BA /* TOCropViewControllerTransitioning.m */; };
+		8114AB59D899CAB7DF65308970690672 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2355AAABEF200CF537991EF48F10A1B3 /* fr.lproj */; };
+		8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = D813AA93DF65D85D8BA64181D60C9641 /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C1E1563AFE4C98C4A9AB9B749CD275E /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1098EB9DAB789519DC25EF371D1895A7 /* ja.lproj */; };
+		8D474402A4A6EBA4BBFAC8EED99E92C6 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 26103A6A6825A9B2BE86D80C9B060160 /* zh-Hant.lproj */; };
+		9270764E1FB81668C6A7A2F4DA1263D5 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EC162271DBD141976C147EF22DC795C7 /* nl.lproj */; };
+		95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = 260D579E65A309CC73A569970238C156 /* GTMSessionFetcherService.m */; };
+		967551D370060AE0F4BC86BA2FE66E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		974004927D7031461931C644DA4A3A9E /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = ACD775B5C36FA94DC2B353F413C8349C /* tr.lproj */; };
+		9EA137E4B7C4ED9A66B761E2656D9D71 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9A60B4F147EFE3E65EE77B9E908CF5AF /* pt.lproj */; };
+		9F12FDF2FA9DD017FC3DDF39017D4B8E /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 43EAC68384F3626BB66558EE89A3FA3C /* ru.lproj */; };
+		9F68500332A11402DE52D74A7874A444 /* TOCropViewControllerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 71D6A41195C33A92BB226F8A6821017D /* TOCropViewControllerBundle.bundle */; };
+		A0C1202EB0736ACB43C5AE408AB8761D /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 59F42D4AB90789DEE9A4DCF27D5D79E6 /* en.lproj */; };
+		A7D5B50770DC8F15D1A63F99637AB644 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2FE43F6B676B947362C59A4753B6F8DA /* de.lproj */; };
+		AA18C94E131A513D3FB5102D740FECDC /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E445C180F8B96D82198CAEC18F4D05 /* UIView+extension.swift */; };
+		B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C46D7E8B3AC646B19A7929C6B14CD13 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B24FAD5F320C4CAA9FC84F93DEAD2F58 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 2F83B91A1F313CAD10814A2767ACCA4D /* vi.lproj */; };
+		B2BC46374B1C138FCF22367283ED4C81 /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB90A8D070476C518B36E955590BC00 /* String+extension.swift */; };
+		B5662D7FB2590E2FD2FDE4C96F6C4FA7 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8173C0A356B8EFAB4F6957FEFE479CD5 /* Base.lproj */; };
+		B690FE98D0C6E60D30C258E0453D621F /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FA47B32DAF242852121C7DF213B2EB /* TOCroppedImageAttributes.m */; };
+		B915DC6EB239CBD0085B565CC18D8B53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		B919E9935A264B1E4A738319DAFBBABA /* Date+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A8FE0F4B7588F395768A5512CEFE4 /* Date+extension.swift */; };
+		B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 291D66A746E6CFFB1670CF7304153901 /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5E8C3A8A0FA8BAEB033D8143189298 /* TOCropViewController-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = C2190A1CEBBE51E811ACF6B63074F6EF /* TOCropViewController-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA5F1D63357142AC9768051378444062 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EA38DE8116558E845BD66A2E5596E4D /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE4D86C835362F2FEC5177BA43A9AD10 /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A085F3340C8B304AF185C4378B1DBDC /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE896539AD94302DC330F70782DE51DE /* CALayer+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E493FDF6B6E30604E1B97239667FF6 /* CALayer+extension.swift */; };
+		BE9B19448EB3A91075ACA1E0C9A817BF /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B1DB1313187D660D23A85311290DDEEE /* pl.lproj */; };
+		C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DD4F27689FFFF0A3141BB3D125AE6AE /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C475F1665832F6937D9996F4FE1E454B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A33D7031E3C4EF3FA5159EBD49681D /* Utils.swift */; };
+		C51308E3BA5C4C36BC97A21E786A67D7 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1666A0363097DC624E14478664941D8F /* TOActivityCroppedImageProvider.m */; };
+		C7B0548448AE0D9FC08810BA07B7E1FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		CD041F53568AD9E58E90D2DCD5CCAAF4 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1471E47F3639B942D2333A681670C154 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFB4A3EB9CB57DFDC722731AA3D64352 /* UIAlertController+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DA9D0B7FCC86B043798BEFB8B51559 /* UIAlertController+extension.swift */; };
+		D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DDDC8DEC92BF8896B34EBEDD498387DF /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94DF614DFB52D4BFDABAD71AD6C88E8B /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D640172525C64A5EA36B8F8ECC53DA7F /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A3848A1E1C700BB11FFE0CA196733CFF /* ar.lproj */; };
+		DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 837ADEC79DC2C84E7A8393001FA30D27 /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = CA94855E1AB8E355C11B8411446108E3 /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2232585915FEB1BDA80A40F922CC23B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A50E3571E9C67CF2D4F3582077EDB87 /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E83551D272744A2D5CF44BE36A978403 /* ByvImagePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A5E44B7389A54A0D4BE57E813AE0C4 /* ByvImagePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6FAB27B52DFE7573BE934DAEE5FC8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */; };
+		EF80B05855102119EE73E479E5ADAA67 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EF84CBBC579823A5F126854726E6725 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DBA8C449B1B9A7E8F257BE3D72A74357 /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C880A3883E7053380A01AF4645ED1F80 /* GTMSessionUploadFetcher.m */; };
+		FC813B0986B566F9E11178C308B95822 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = FA1E423591E2D170D06E0D902A298850 /* da.lproj */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05A46B57F5EA3F2D2E27AEC3AF975080 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 386090C7DFF033845D44093B443B05F6;
+			remoteInfo = ByvUtils;
+		};
+		10E9CDEBA494A7E6DD93313E45C3A561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90364F99C206BAA15EAA23AE90D825CC;
+			remoteInfo = "TOCropViewController-TOCropViewControllerBundle";
+		};
+		287D17A5593F7F3AF063BA5F3FDBDFB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 107A9565F9DF88517DFD3E28C05B2B96;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		2E85E5FEB6C27C820091BCDB46875C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F8E8C4EC570113E48309505F1111748;
+			remoteInfo = TOCropViewController;
+		};
+		3D3DB544E727D841CAF7FE4470C0859E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53A46185EFDFE39FAB1B739D33D168DD;
+			remoteInfo = SwiftKeychainWrapper;
+		};
+		4529122DCF50F38CEA9B3E2C9364210F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F8E8C4EC570113E48309505F1111748;
+			remoteInfo = TOCropViewController;
+		};
+		C66A9BD073857ADFA9AF8D3993E1D755 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C052BEBFBD0AB5218CC64BA3450F6547;
+			remoteInfo = GTMSessionFetcher;
+		};
+		E6CE5C0385B18E67AD03550560E7EEC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 386090C7DFF033845D44093B443B05F6;
+			remoteInfo = ByvUtils;
+		};
+		FE23AA5657FAEA8C3588372FBCD03228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44733126F820B2866D972478F6FE78B9;
+			remoteInfo = ByvImagePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02498426AC4DD95B4ACCA459DBEBEF2B /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = TOCropViewController/Views/TOCropView.m; sourceTree = "<group>"; };
+		04BDEFB9CF7C2492BD420404E74002C9 /* ByvUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ByvUtils.xcconfig; sourceTree = "<group>"; };
+		04E493FDF6B6E30604E1B97239667FF6 /* CALayer+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+extension.swift"; path = "ByvUtils/Classes/CALayer+extension.swift"; sourceTree = "<group>"; };
+		063964A21029ED1D788E6618BAD6F8BF /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		082549F14096B6625752DD8C58941D0F /* ResourceBundle-TOCropViewControllerBundle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-Info.plist"; sourceTree = "<group>"; };
+		0DFF9421850FA6D943F1AB4B6F8C451A /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = TOCropViewController/Models/TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
+		0EF84CBBC579823A5F126854726E6725 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = TOCropViewController/Views/TOCropToolbar.h; sourceTree = "<group>"; };
+		1025FCD6DB773CEEC6E8422B6CC40729 /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		1098EB9DAB789519DC25EF371D1895A7 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = TOCropViewController/ja.lproj; sourceTree = "<group>"; };
+		1471E47F3639B942D2333A681670C154 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = TOCropViewController/Views/TOCropOverlayView.h; sourceTree = "<group>"; };
+		1666A0363097DC624E14478664941D8F /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = TOCropViewController/Models/TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		19D8E532DA52971C644F1FE15A948BD3 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		1A9BE4A07A30898CD445C3D1CB36621B /* SwiftKeychainWrapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftKeychainWrapper-dummy.m"; sourceTree = "<group>"; };
+		1B0DB78133D010B0B1EE60D31147E1FF /* TOCropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TOCropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD4F27689FFFF0A3141BB3D125AE6AE /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		1E4D897606B66490C036CF7DD4CC708B /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		1EDD67DF3CA37132CE4CD861DDAB9FC2 /* ByvUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ByvUtils.modulemap; sourceTree = "<group>"; };
+		1FDFF169E4CEF30378D446EC9B2303F9 /* TOCropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TOCropViewController.modulemap; sourceTree = "<group>"; };
+		22EAEEE6247E8D0520DEEBD4571079C1 /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		232179AECCEA190D6772418D759FB40C /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		2355AAABEF200CF537991EF48F10A1B3 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = fr.lproj; path = TOCropViewController/fr.lproj; sourceTree = "<group>"; };
+		260D579E65A309CC73A569970238C156 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		26103A6A6825A9B2BE86D80C9B060160 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hant.lproj"; path = "TOCropViewController/zh-Hant.lproj"; sourceTree = "<group>"; };
+		291D66A746E6CFFB1670CF7304153901 /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
+		2CB6A929A06BC4F292B57B725085E4A1 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = TOCropViewController/TOCropViewController.m; sourceTree = "<group>"; };
+		2CD0509C7DE4E33904A675B434CF409D /* ByvUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ByvUtils.framework; path = ByvUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA38DE8116558E845BD66A2E5596E4D /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = TOCropViewController/Models/TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		2F3C68C560C4BB5C4A26248D6EAF61EC /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		2F83B91A1F313CAD10814A2767ACCA4D /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = vi.lproj; path = TOCropViewController/vi.lproj; sourceTree = "<group>"; };
+		2FE43F6B676B947362C59A4753B6F8DA /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = de.lproj; path = TOCropViewController/de.lproj; sourceTree = "<group>"; };
+		30E21050CD0E815C1040BF58648EDB2B /* ByvImagePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ByvImagePicker.xcconfig; sourceTree = "<group>"; };
+		310B8289F7A71392A605956633F07CC1 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseStorage.framework; path = Frameworks/FirebaseStorage.framework; sourceTree = "<group>"; };
+		319A89E2AA0E030635E2ED348800905B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32BEC0D1A42814BD8CF65D97481E0F79 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
+		335046AA103F5036874969F73390369C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		349B8F702C2B21D383931AC31056841F /* TOCropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TOCropViewController.framework; path = TOCropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3622C1147F14372E004FB135BDB737C8 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4FC416F7D7215A99CB408F6C19D493 /* ByvUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ByvUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		419FDCFEA2DBCF319D1CFEC138EC148C /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = TOCropViewController/Views/TOCropToolbar.m; sourceTree = "<group>"; };
+		43EAC68384F3626BB66558EE89A3FA3C /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ru.lproj; path = TOCropViewController/ru.lproj; sourceTree = "<group>"; };
+		44834AD4D4898E94D1B046BC5E4F322D /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = TOCropViewController/Views/TOCropScrollView.h; sourceTree = "<group>"; };
+		44AAA19829E65DF6206FE7B38F0BDA70 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		4732B25FCF74CD98363443C115867C99 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = TOCropViewController/TOCropViewController.h; sourceTree = "<group>"; };
+		4754941AEFCB866812872B927ACE6A39 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		4B432EE7E9F62E2F27F784CFD0D5E0A1 /* ByvImagePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ByvImagePicker-dummy.m"; sourceTree = "<group>"; };
+		4D5A8FE0F4B7588F395768A5512CEFE4 /* Date+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Date+extension.swift"; path = "ByvUtils/Classes/Date+extension.swift"; sourceTree = "<group>"; };
+		523B2FD440323FD62D69FAC3E2899196 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		5514127FD4A82305038AE8276CAD60C7 /* SwiftKeychainWrapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftKeychainWrapper.modulemap; sourceTree = "<group>"; };
+		5590405F64FE5DB282BFDD66ADFCD2D2 /* ByvImagePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ByvImagePicker-prefix.pch"; sourceTree = "<group>"; };
+		5637BD140A30B3E5BA6D881B665680CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56457950A21690563D1EC7890AA5BD2C /* TOCropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-prefix.pch"; sourceTree = "<group>"; };
+		59F42D4AB90789DEE9A4DCF27D5D79E6 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = TOCropViewController/en.lproj; sourceTree = "<group>"; };
+		5C46D7E8B3AC646B19A7929C6B14CD13 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		61FEF68389F89891723E344BAC0CFB1D /* TOCropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TOCropViewController-dummy.m"; sourceTree = "<group>"; };
+		66BBCD7DFA31201FB7AAA9066DDBB453 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		717BE0A35C59675D0E485A2AEBE9E946 /* Pods-AMMChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMMChat.debug.xcconfig"; sourceTree = "<group>"; };
+		71D6A41195C33A92BB226F8A6821017D /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = TOCropViewControllerBundle.bundle; path = TOCropViewControllerBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		71E445C180F8B96D82198CAEC18F4D05 /* UIView+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+extension.swift"; path = "ByvUtils/Classes/UIView+extension.swift"; sourceTree = "<group>"; };
+		72154DC8733065682DF88F515F403983 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "TOCropViewController/Models/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		72CE6301A8042C02748A5DBD95AC9ED1 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		74CE91886D1EE48D94E7159CA2EBE5CD /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		770A9F791D22041005CC8B4D3F0CAD05 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = es.lproj; path = TOCropViewController/es.lproj; sourceTree = "<group>"; };
+		799294CB51FADD799E22A9526B589AEC /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ko.lproj; path = TOCropViewController/ko.lproj; sourceTree = "<group>"; };
+		7A085F3340C8B304AF185C4378B1DBDC /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = TOCropViewController/Models/TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		7B9C58A71ECCF20846DA80E9CE1F9FA9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6DECEDF028423335868787E374113B /* URL+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+extension.swift"; path = "ByvUtils/Classes/URL+extension.swift"; sourceTree = "<group>"; };
+		8173C0A356B8EFAB4F6957FEFE479CD5 /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = Base.lproj; path = TOCropViewController/Base.lproj; sourceTree = "<group>"; };
+		823525ADD00E8716AE4F57212E48CD64 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		8240F6B38A073C83B5A01509F7D0540B /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = id.lproj; path = TOCropViewController/id.lproj; sourceTree = "<group>"; };
+		82C148D6C6294F4AE08FA5DE0990D272 /* SwiftKeychainWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftKeychainWrapper.framework; path = SwiftKeychainWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837ADEC79DC2C84E7A8393001FA30D27 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		84A33D7031E3C4EF3FA5159EBD49681D /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ByvUtils/Classes/Utils.swift; sourceTree = "<group>"; };
+		853F88A9E9FDE948FDF201B9EAE61799 /* ByvUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ByvUtils-prefix.pch"; sourceTree = "<group>"; };
+		87A5FD8F155914C29D436EF1CD87595F /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		89E155AE284B9576346D6D01B103B47D /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = it.lproj; path = TOCropViewController/it.lproj; sourceTree = "<group>"; };
+		8A50E3571E9C67CF2D4F3582077EDB87 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		8A5235882571109B1ABA462293F87A55 /* ByvImagePicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ByvImagePicker.swift; path = ByvImagePicker/Classes/ByvImagePicker.swift; sourceTree = "<group>"; };
+		8AF9841FD67D641D239AF1BF7057BDFD /* ByvUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ByvUtils-dummy.m"; sourceTree = "<group>"; };
+		8DE131ADCF2A35CBC42F5B43AEEA9CC0 /* UIColor+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+extension.swift"; path = "ByvUtils/Classes/UIColor+extension.swift"; sourceTree = "<group>"; };
+		8F071EFFC25E41175ECB7F843FAB7021 /* SwiftKeychainWrapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftKeychainWrapper.xcconfig; sourceTree = "<group>"; };
+		9044591260022511871B5E2B9DA30953 /* ByvImagePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ByvImagePicker.modulemap; sourceTree = "<group>"; };
+		90874EB17040427A5DF66B3AA485E277 /* Pods-AMMChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AMMChat.release.xcconfig"; sourceTree = "<group>"; };
+		90AF36C8CA74D48FC90B341F176C3B4E /* Pods-AMMChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AMMChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90B48D52CF369BE11A583087C1F3B797 /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = TOCropViewController/Views/TOCropView.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94DF614DFB52D4BFDABAD71AD6C88E8B /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		952290BF1A4F6522ED86F8026295AAAD /* SwiftKeychainWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftKeychainWrapper.h; path = SwiftKeychainWrapper/SwiftKeychainWrapper.h; sourceTree = "<group>"; };
+		972BE7B418675EA18C8083712CE7749F /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		97FA84DC70B127E9F685122F9627CED3 /* Pods-AMMChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMMChat-frameworks.sh"; sourceTree = "<group>"; };
+		990DFBC1F61A93E4CE04B5BCAF3390EB /* Pods_AMMChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AMMChat.framework; path = "Pods-AMMChat.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99FB76E2C032D8C7DA6431DEDC5F1184 /* TOCropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TOCropViewController-umbrella.h"; sourceTree = "<group>"; };
+		9A5DF76454A689EF6A9146E50C25B5BC /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainItemAccessibility.swift; path = SwiftKeychainWrapper/KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		9A60B4F147EFE3E65EE77B9E908CF5AF /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pt.lproj; path = TOCropViewController/pt.lproj; sourceTree = "<group>"; };
+		A3848A1E1C700BB11FFE0CA196733CFF /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ar.lproj; path = TOCropViewController/ar.lproj; sourceTree = "<group>"; };
+		A5DA9D0B7FCC86B043798BEFB8B51559 /* UIAlertController+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIAlertController+extension.swift"; path = "ByvUtils/Classes/UIAlertController+extension.swift"; sourceTree = "<group>"; };
+		A68C3B0454CF120688B6A179DB195B9A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACD775B5C36FA94DC2B353F413C8349C /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = tr.lproj; path = TOCropViewController/tr.lproj; sourceTree = "<group>"; };
+		AF488E0143DF90B5F09FFA990FC8A27E /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = TOCropViewController/Views/TOCropOverlayView.m; sourceTree = "<group>"; };
+		B04202BB917B55660F8AFD9AB3984355 /* UIImage+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+extension.swift"; path = "ByvUtils/Classes/UIImage+extension.swift"; sourceTree = "<group>"; };
+		B0ADBCBE17ED8BE33A10F6008436A2DD /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		B1DB1313187D660D23A85311290DDEEE /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = pl.lproj; path = TOCropViewController/pl.lproj; sourceTree = "<group>"; };
+		B7F82905086E7A7A3E62F766F1544798 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		B7FA47B32DAF242852121C7DF213B2EB /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = TOCropViewController/Models/TOCroppedImageAttributes.m; sourceTree = "<group>"; };
+		BB9F4B692F950C74C272FD6F2450D817 /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		BFB90A8D070476C518B36E955590BC00 /* String+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+extension.swift"; path = "ByvUtils/Classes/String+extension.swift"; sourceTree = "<group>"; };
+		C2190A1CEBBE51E811ACF6B63074F6EF /* TOCropViewController-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TOCropViewController-Bridging-Header.h"; path = "TOCropViewController/TOCropViewController-Bridging-Header.h"; sourceTree = "<group>"; };
+		C3A5E44B7389A54A0D4BE57E813AE0C4 /* ByvImagePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ByvImagePicker-umbrella.h"; sourceTree = "<group>"; };
+		C3DD8A422459489A161DBC2C4D283F26 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "TOCropViewController/zh-Hans.lproj"; sourceTree = "<group>"; };
+		C5B62BAC793B8397A3F37F4CCBBCEB41 /* ByvUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ByvUtils-umbrella.h"; sourceTree = "<group>"; };
+		C880A3883E7053380A01AF4645ED1F80 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		C9857181268401BD4B4D8EA6F3745BE2 /* SwiftKeychainWrapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-umbrella.h"; sourceTree = "<group>"; };
+		CA94855E1AB8E355C11B8411446108E3 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		CD0827E04D7FF4CB11697F33A33EBC6B /* KeychainWrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainWrapper.swift; path = SwiftKeychainWrapper/KeychainWrapper.swift; sourceTree = "<group>"; };
+		CF2952E105AD59DC4FB6E9C7861D7043 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		D059061D50BE0057A3C2DC97EFF970B0 /* Pods-AMMChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AMMChat-dummy.m"; sourceTree = "<group>"; };
+		D07D7B02216B6C4B6D3E987F1EE3F4E6 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		D526B3B5F815C274679C613600097E1A /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "TOCropViewController/Models/UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		D702C8A66E00D6352419AB6D80C5B5B7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D813AA93DF65D85D8BA64181D60C9641 /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		D877BAC26BEF6040EDA4B2FD7B2BDA52 /* ByvImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ByvImagePicker.framework; path = ByvImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1D2305006ACB2BCDA21B2468ED4640 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE3E81D147E15C2C59572DEEC909A0B /* Pods-AMMChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AMMChat.modulemap"; sourceTree = "<group>"; };
+		DBA8C449B1B9A7E8F257BE3D72A74357 /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		DC47CA025E5205760BCE68D948325360 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCFDF81B0FC62CEE5486E6FBCEB68242 /* Pods-AMMChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AMMChat-umbrella.h"; sourceTree = "<group>"; };
+		DDDC8DEC92BF8896B34EBEDD498387DF /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		DEB89076E2439D8FD0241F1EF36E0550 /* UIViewController+extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+extension.swift"; path = "ByvUtils/Classes/UIViewController+extension.swift"; sourceTree = "<group>"; };
+		DFC5651600DE5679C157FAF09B3D2C8F /* Pods-AMMChat-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AMMChat-resources.sh"; sourceTree = "<group>"; };
+		E1D05C1E74F4C470875E94B269A20AE7 /* SwiftKeychainWrapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftKeychainWrapper-prefix.pch"; sourceTree = "<group>"; };
+		E332FC934FE361595BA0809A86144F58 /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = TOCropViewController/Views/TOCropScrollView.m; sourceTree = "<group>"; };
+		EC162271DBD141976C147EF22DC795C7 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = nl.lproj; path = TOCropViewController/nl.lproj; sourceTree = "<group>"; };
+		ECE4295B4092ED06F7455F519FE53DCB /* Pods-AMMChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AMMChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED0FE62667F3AE4A933C69BF7B68C5BA /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = TOCropViewController/Models/TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		FA1E423591E2D170D06E0D902A298850 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = da.lproj; path = TOCropViewController/da.lproj; sourceTree = "<group>"; };
+		FDB30F8C7719E3B68B6285294CF54EC9 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		FE4FAE0DBFC9DEAB7F88F01CB426394C /* TOCropViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TOCropViewController.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		101AD5C0EEE04A67B598E620C112E6CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07A6A283734C50DE8E7CAE318BD1C1D4 /* ByvUtils.framework in Frameworks */,
+				B915DC6EB239CBD0085B565CC18D8B53 /* Foundation.framework in Frameworks */,
+				165C1FA64BC1B6872B194C4A1F645D4F /* TOCropViewController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4103C9286DD52C9ABA1883301A80713D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B0548448AE0D9FC08810BA07B7E1FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D55B58CEFF0B0DD230D3F35C0E190C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED6FAB27B52DFE7573BE934DAEE5FC8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE88E96161DE195EAAF0A3B6375EA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9B999DFAA1052294448B64C77434B1 /* Foundation.framework in Frameworks */,
+				65B56BD3DBC9B81BB008219D0BA735A9 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE99921A2964F204DBFD141CC802BF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2232585915FEB1BDA80A40F922CC23B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB2FD04E98E8D08B812CFAD3603A106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				967551D370060AE0F4BC86BA2FE66E6B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E57CA44B8CEB99C0B062337FBFA9F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2172D0E66E5B6321E289AE922488B9CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB9F0480B86399C9144EDB119FD6F726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DB10B1983D7A4517A3DBBD92F9C7B27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E4FC416F7D7215A99CB408F6C19D493 /* ByvUtils.framework */,
+				1B0DB78133D010B0B1EE60D31147E1FF /* TOCropViewController.framework */,
+				CED1B3C4A4DBEB21B88DE42C7CD957A4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21A89D6CF6F4053F01E632F33D7ECC72 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				285C25755A443990EC63F9CF6AE0424A /* Frameworks */,
+			);
+			name = FirebaseAuth;
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		285C25755A443990EC63F9CF6AE0424A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				523B2FD440323FD62D69FAC3E2899196 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3667CC2A31A12CC55AC0449805C11122 /* NSDictionary+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				B7F82905086E7A7A3E62F766F1544798 /* GTMNSDictionary+URLArguments.h */,
+				8A50E3571E9C67CF2D4F3582077EDB87 /* GTMNSDictionary+URLArguments.m */,
+			);
+			name = "NSDictionary+URLArguments";
+			sourceTree = "<group>";
+		};
+		3CFD6980D491B0FB38A69711C273252A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				74CE91886D1EE48D94E7159CA2EBE5CD /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		464EA583DD99BF39FDFDE3FE74931A3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				310B8289F7A71392A605956633F07CC1 /* FirebaseStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47698161A01683B4F51330455FFD22D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				232179AECCEA190D6772418D759FB40C /* FirebaseCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4879E27F6A364E572D9BCBD558865907 /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				7604AAC04959876CFB4BA8288DB91FBD /* Core */,
+				9269474E00FF1DBFF8B7A1E324F08DE0 /* Support Files */,
+			);
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		4BA88871CE347D742E659D9785F853A5 /* TOCropViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2EA38DE8116558E845BD66A2E5596E4D /* TOActivityCroppedImageProvider.h */,
+				1666A0363097DC624E14478664941D8F /* TOActivityCroppedImageProvider.m */,
+				1471E47F3639B942D2333A681670C154 /* TOCropOverlayView.h */,
+				AF488E0143DF90B5F09FFA990FC8A27E /* TOCropOverlayView.m */,
+				7A085F3340C8B304AF185C4378B1DBDC /* TOCroppedImageAttributes.h */,
+				B7FA47B32DAF242852121C7DF213B2EB /* TOCroppedImageAttributes.m */,
+				44834AD4D4898E94D1B046BC5E4F322D /* TOCropScrollView.h */,
+				E332FC934FE361595BA0809A86144F58 /* TOCropScrollView.m */,
+				0EF84CBBC579823A5F126854726E6725 /* TOCropToolbar.h */,
+				419FDCFEA2DBCF319D1CFEC138EC148C /* TOCropToolbar.m */,
+				90B48D52CF369BE11A583087C1F3B797 /* TOCropView.h */,
+				02498426AC4DD95B4ACCA459DBEBEF2B /* TOCropView.m */,
+				4732B25FCF74CD98363443C115867C99 /* TOCropViewController.h */,
+				2CB6A929A06BC4F292B57B725085E4A1 /* TOCropViewController.m */,
+				C2190A1CEBBE51E811ACF6B63074F6EF /* TOCropViewController-Bridging-Header.h */,
+				0DFF9421850FA6D943F1AB4B6F8C451A /* TOCropViewControllerTransitioning.h */,
+				ED0FE62667F3AE4A933C69BF7B68C5BA /* TOCropViewControllerTransitioning.m */,
+				D526B3B5F815C274679C613600097E1A /* UIImage+CropRotate.h */,
+				72154DC8733065682DF88F515F403983 /* UIImage+CropRotate.m */,
+				F00EE2EE265D4A73A4D2ACB0CD0BC052 /* Resources */,
+				DCF6F3CCC53ABEBFF463766DE2A59756 /* Support Files */,
+			);
+			name = TOCropViewController;
+			path = TOCropViewController;
+			sourceTree = "<group>";
+		};
+		586B059F77761881DD4E2A2BC7D98A1E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EDD67DF3CA37132CE4CD861DDAB9FC2 /* ByvUtils.modulemap */,
+				04BDEFB9CF7C2492BD420404E74002C9 /* ByvUtils.xcconfig */,
+				8AF9841FD67D641D239AF1BF7057BDFD /* ByvUtils-dummy.m */,
+				853F88A9E9FDE948FDF201B9EAE61799 /* ByvUtils-prefix.pch */,
+				C5B62BAC793B8397A3F37F4CCBBCEB41 /* ByvUtils-umbrella.h */,
+				7B9C58A71ECCF20846DA80E9CE1F9FA9 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ByvUtils";
+			sourceTree = "<group>";
+		};
+		58A2BA85BFEB9C15EB4E47D78177D7F7 /* NSString+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				837ADEC79DC2C84E7A8393001FA30D27 /* GTMNSString+URLArguments.h */,
+				972BE7B418675EA18C8083712CE7749F /* GTMNSString+URLArguments.m */,
+			);
+			name = "NSString+URLArguments";
+			sourceTree = "<group>";
+		};
+		612F75285071DCDB4F2EB3A74041E569 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				85FF66D4AB90220EACF665F32A053BC6 /* Frameworks */,
+			);
+			name = FirebaseDatabase;
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		61B71271F2175FD80F783937C62184F9 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				47698161A01683B4F51330455FFD22D9 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		744001AC8D88095610707FF35B35DC5D /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				A39BB549C6979472882EE14CF4AFEB6A /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		74F53D7A2F993A2819C3ECAD8F7EB24D /* ByvUtils */ = {
+			isa = PBXGroup;
+			children = (
+				04E493FDF6B6E30604E1B97239667FF6 /* CALayer+extension.swift */,
+				4D5A8FE0F4B7588F395768A5512CEFE4 /* Date+extension.swift */,
+				BFB90A8D070476C518B36E955590BC00 /* String+extension.swift */,
+				A5DA9D0B7FCC86B043798BEFB8B51559 /* UIAlertController+extension.swift */,
+				8DE131ADCF2A35CBC42F5B43AEEA9CC0 /* UIColor+extension.swift */,
+				B04202BB917B55660F8AFD9AB3984355 /* UIImage+extension.swift */,
+				71E445C180F8B96D82198CAEC18F4D05 /* UIView+extension.swift */,
+				DEB89076E2439D8FD0241F1EF36E0550 /* UIViewController+extension.swift */,
+				7C6DECEDF028423335868787E374113B /* URL+extension.swift */,
+				84A33D7031E3C4EF3FA5159EBD49681D /* Utils.swift */,
+				586B059F77761881DD4E2A2BC7D98A1E /* Support Files */,
+			);
+			name = ByvUtils;
+			path = ByvUtils;
+			sourceTree = "<group>";
+		};
+		7604AAC04959876CFB4BA8288DB91FBD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D813AA93DF65D85D8BA64181D60C9641 /* GTMSessionFetcher.h */,
+				BB9F4B692F950C74C272FD6F2450D817 /* GTMSessionFetcher.m */,
+				2F3C68C560C4BB5C4A26248D6EAF61EC /* GTMSessionFetcherLogging.h */,
+				1025FCD6DB773CEEC6E8422B6CC40729 /* GTMSessionFetcherLogging.m */,
+				CA94855E1AB8E355C11B8411446108E3 /* GTMSessionFetcherService.h */,
+				260D579E65A309CC73A569970238C156 /* GTMSessionFetcherService.m */,
+				DBA8C449B1B9A7E8F257BE3D72A74357 /* GTMSessionUploadFetcher.h */,
+				C880A3883E7053380A01AF4645ED1F80 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				1DB10B1983D7A4517A3DBBD92F9C7B27 /* Frameworks */,
+				AF28D035825983E3CC573CCCDABAFED2 /* Pods */,
+				D9EF8B7B2E8116DA5D5902064B4B9E72 /* Products */,
+				971321738D313EE052CDAE47EBCE4B97 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85FF66D4AB90220EACF665F32A053BC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19D8E532DA52971C644F1FE15A948BD3 /* FirebaseDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BECDD456B58A7B59E3B3A0A838FD4DC /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				EF49D25BD99775657317237C76D0AE30 /* DebugUtils */,
+				A4E8BBDB7FA84DA575F08DF33503B6C4 /* Defines */,
+				911A9D7AA352A181AC910C49AA145651 /* NSData+zlib */,
+				3667CC2A31A12CC55AC0449805C11122 /* NSDictionary+URLArguments */,
+				58A2BA85BFEB9C15EB4E47D78177D7F7 /* NSString+URLArguments */,
+				B3C50CE723B46289E7D04091345C8D89 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		911A9D7AA352A181AC910C49AA145651 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				1DD4F27689FFFF0A3141BB3D125AE6AE /* GTMNSData+zlib.h */,
+				72CE6301A8042C02748A5DBD95AC9ED1 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		9269474E00FF1DBFF8B7A1E324F08DE0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22EAEEE6247E8D0520DEEBD4571079C1 /* GTMSessionFetcher.modulemap */,
+				823525ADD00E8716AE4F57212E48CD64 /* GTMSessionFetcher.xcconfig */,
+				FDB30F8C7719E3B68B6285294CF54EC9 /* GTMSessionFetcher-dummy.m */,
+				87A5FD8F155914C29D436EF1CD87595F /* GTMSessionFetcher-prefix.pch */,
+				94DF614DFB52D4BFDABAD71AD6C88E8B /* GTMSessionFetcher-umbrella.h */,
+				319A89E2AA0E030635E2ED348800905B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		971321738D313EE052CDAE47EBCE4B97 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE9AB83AF96B574A62A59D74DF5E88BC /* Pods-AMMChat */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		99B872B5863F8A2C0D60115E3076A933 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9044591260022511871B5E2B9DA30953 /* ByvImagePicker.modulemap */,
+				30E21050CD0E815C1040BF58648EDB2B /* ByvImagePicker.xcconfig */,
+				4B432EE7E9F62E2F27F784CFD0D5E0A1 /* ByvImagePicker-dummy.m */,
+				5590405F64FE5DB282BFDD66ADFCD2D2 /* ByvImagePicker-prefix.pch */,
+				C3A5E44B7389A54A0D4BE57E813AE0C4 /* ByvImagePicker-umbrella.h */,
+				335046AA103F5036874969F73390369C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ByvImagePicker";
+			sourceTree = "<group>";
+		};
+		A14BBB912A896574DDE7D521C19D0A1B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A68C3B0454CF120688B6A179DB195B9A /* Info.plist */,
+				5514127FD4A82305038AE8276CAD60C7 /* SwiftKeychainWrapper.modulemap */,
+				8F071EFFC25E41175ECB7F843FAB7021 /* SwiftKeychainWrapper.xcconfig */,
+				1A9BE4A07A30898CD445C3D1CB36621B /* SwiftKeychainWrapper-dummy.m */,
+				E1D05C1E74F4C470875E94B269A20AE7 /* SwiftKeychainWrapper-prefix.pch */,
+				C9857181268401BD4B4D8EA6F3745BE2 /* SwiftKeychainWrapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftKeychainWrapper";
+			sourceTree = "<group>";
+		};
+		A39BB549C6979472882EE14CF4AFEB6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E4D897606B66490C036CF7DD4CC708B /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4E8BBDB7FA84DA575F08DF33503B6C4 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				DDDC8DEC92BF8896B34EBEDD498387DF /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		AE9AB83AF96B574A62A59D74DF5E88BC /* Pods-AMMChat */ = {
+			isa = PBXGroup;
+			children = (
+				5637BD140A30B3E5BA6D881B665680CC /* Info.plist */,
+				DAE3E81D147E15C2C59572DEEC909A0B /* Pods-AMMChat.modulemap */,
+				90AF36C8CA74D48FC90B341F176C3B4E /* Pods-AMMChat-acknowledgements.markdown */,
+				ECE4295B4092ED06F7455F519FE53DCB /* Pods-AMMChat-acknowledgements.plist */,
+				D059061D50BE0057A3C2DC97EFF970B0 /* Pods-AMMChat-dummy.m */,
+				97FA84DC70B127E9F685122F9627CED3 /* Pods-AMMChat-frameworks.sh */,
+				DFC5651600DE5679C157FAF09B3D2C8F /* Pods-AMMChat-resources.sh */,
+				DCFDF81B0FC62CEE5486E6FBCEB68242 /* Pods-AMMChat-umbrella.h */,
+				717BE0A35C59675D0E485A2AEBE9E946 /* Pods-AMMChat.debug.xcconfig */,
+				90874EB17040427A5DF66B3AA485E277 /* Pods-AMMChat.release.xcconfig */,
+			);
+			name = "Pods-AMMChat";
+			path = "Target Support Files/Pods-AMMChat";
+			sourceTree = "<group>";
+		};
+		AF28D035825983E3CC573CCCDABAFED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE505ACC6C7AB095FCB50C0485FA802C /* ByvImagePicker */,
+				74F53D7A2F993A2819C3ECAD8F7EB24D /* ByvUtils */,
+				FCAA5E08A618EC818CF5479B6C3F4B74 /* Firebase */,
+				B56AB3A14146B055B0670AD38907E750 /* FirebaseAnalytics */,
+				21A89D6CF6F4053F01E632F33D7ECC72 /* FirebaseAuth */,
+				61B71271F2175FD80F783937C62184F9 /* FirebaseCore */,
+				612F75285071DCDB4F2EB3A74041E569 /* FirebaseDatabase */,
+				744001AC8D88095610707FF35B35DC5D /* FirebaseInstanceID */,
+				BC0216C8AAFCA9818CD086DC951E46D8 /* FirebaseStorage */,
+				8BECDD456B58A7B59E3B3A0A838FD4DC /* GoogleToolboxForMac */,
+				4879E27F6A364E572D9BCBD558865907 /* GTMSessionFetcher */,
+				C46B4D80A7DA0240734927762922EF6E /* SwiftKeychainWrapper */,
+				4BA88871CE347D742E659D9785F853A5 /* TOCropViewController */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3C50CE723B46289E7D04091345C8D89 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF2952E105AD59DC4FB6E9C7861D7043 /* GoogleToolboxForMac.modulemap */,
+				44AAA19829E65DF6206FE7B38F0BDA70 /* GoogleToolboxForMac.xcconfig */,
+				063964A21029ED1D788E6618BAD6F8BF /* GoogleToolboxForMac-dummy.m */,
+				4754941AEFCB866812872B927ACE6A39 /* GoogleToolboxForMac-prefix.pch */,
+				B0ADBCBE17ED8BE33A10F6008436A2DD /* GoogleToolboxForMac-umbrella.h */,
+				DA1D2305006ACB2BCDA21B2468ED4640 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		B56AB3A14146B055B0670AD38907E750 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				D7EB51145E6E9085ACCA0975659687A1 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		BC0216C8AAFCA9818CD086DC951E46D8 /* FirebaseStorage */ = {
+			isa = PBXGroup;
+			children = (
+				464EA583DD99BF39FDFDE3FE74931A3C /* Frameworks */,
+			);
+			name = FirebaseStorage;
+			path = FirebaseStorage;
+			sourceTree = "<group>";
+		};
+		C46B4D80A7DA0240734927762922EF6E /* SwiftKeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DF76454A689EF6A9146E50C25B5BC /* KeychainItemAccessibility.swift */,
+				CD0827E04D7FF4CB11697F33A33EBC6B /* KeychainWrapper.swift */,
+				952290BF1A4F6522ED86F8026295AAAD /* SwiftKeychainWrapper.h */,
+				A14BBB912A896574DDE7D521C19D0A1B /* Support Files */,
+			);
+			name = SwiftKeychainWrapper;
+			path = SwiftKeychainWrapper;
+			sourceTree = "<group>";
+		};
+		CED1B3C4A4DBEB21B88DE42C7CD957A4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				76B36FF4843CA0534EBD86F2012FD9ED /* Foundation.framework */,
+				D702C8A66E00D6352419AB6D80C5B5B7 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D7EB51145E6E9085ACCA0975659687A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D07D7B02216B6C4B6D3E987F1EE3F4E6 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9EF8B7B2E8116DA5D5902064B4B9E72 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D877BAC26BEF6040EDA4B2FD7B2BDA52 /* ByvImagePicker.framework */,
+				2CD0509C7DE4E33904A675B434CF409D /* ByvUtils.framework */,
+				66BBCD7DFA31201FB7AAA9066DDBB453 /* GoogleToolboxForMac.framework */,
+				3622C1147F14372E004FB135BDB737C8 /* GTMSessionFetcher.framework */,
+				990DFBC1F61A93E4CE04B5BCAF3390EB /* Pods_AMMChat.framework */,
+				82C148D6C6294F4AE08FA5DE0990D272 /* SwiftKeychainWrapper.framework */,
+				349B8F702C2B21D383931AC31056841F /* TOCropViewController.framework */,
+				71D6A41195C33A92BB226F8A6821017D /* TOCropViewControllerBundle.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCF6F3CCC53ABEBFF463766DE2A59756 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC47CA025E5205760BCE68D948325360 /* Info.plist */,
+				082549F14096B6625752DD8C58941D0F /* ResourceBundle-TOCropViewControllerBundle-Info.plist */,
+				1FDFF169E4CEF30378D446EC9B2303F9 /* TOCropViewController.modulemap */,
+				FE4FAE0DBFC9DEAB7F88F01CB426394C /* TOCropViewController.xcconfig */,
+				61FEF68389F89891723E344BAC0CFB1D /* TOCropViewController-dummy.m */,
+				56457950A21690563D1EC7890AA5BD2C /* TOCropViewController-prefix.pch */,
+				99FB76E2C032D8C7DA6431DEDC5F1184 /* TOCropViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TOCropViewController";
+			sourceTree = "<group>";
+		};
+		EF49D25BD99775657317237C76D0AE30 /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				5C46D7E8B3AC646B19A7929C6B14CD13 /* GTMDebugSelectorValidation.h */,
+				32BEC0D1A42814BD8CF65D97481E0F79 /* GTMDebugThreadValidation.h */,
+				291D66A746E6CFFB1670CF7304153901 /* GTMMethodCheck.h */,
+			);
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		F00EE2EE265D4A73A4D2ACB0CD0BC052 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A3848A1E1C700BB11FFE0CA196733CFF /* ar.lproj */,
+				8173C0A356B8EFAB4F6957FEFE479CD5 /* Base.lproj */,
+				FA1E423591E2D170D06E0D902A298850 /* da.lproj */,
+				2FE43F6B676B947362C59A4753B6F8DA /* de.lproj */,
+				59F42D4AB90789DEE9A4DCF27D5D79E6 /* en.lproj */,
+				770A9F791D22041005CC8B4D3F0CAD05 /* es.lproj */,
+				2355AAABEF200CF537991EF48F10A1B3 /* fr.lproj */,
+				8240F6B38A073C83B5A01509F7D0540B /* id.lproj */,
+				89E155AE284B9576346D6D01B103B47D /* it.lproj */,
+				1098EB9DAB789519DC25EF371D1895A7 /* ja.lproj */,
+				799294CB51FADD799E22A9526B589AEC /* ko.lproj */,
+				EC162271DBD141976C147EF22DC795C7 /* nl.lproj */,
+				B1DB1313187D660D23A85311290DDEEE /* pl.lproj */,
+				9A60B4F147EFE3E65EE77B9E908CF5AF /* pt.lproj */,
+				43EAC68384F3626BB66558EE89A3FA3C /* ru.lproj */,
+				ACD775B5C36FA94DC2B353F413C8349C /* tr.lproj */,
+				2F83B91A1F313CAD10814A2767ACCA4D /* vi.lproj */,
+				C3DD8A422459489A161DBC2C4D283F26 /* zh-Hans.lproj */,
+				26103A6A6825A9B2BE86D80C9B060160 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FCAA5E08A618EC818CF5479B6C3F4B74 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3CFD6980D491B0FB38A69711C273252A /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		FE505ACC6C7AB095FCB50C0485FA802C /* ByvImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				8A5235882571109B1ABA462293F87A55 /* ByvImagePicker.swift */,
+				99B872B5863F8A2C0D60115E3076A933 /* Support Files */,
+			);
+			name = ByvImagePicker;
+			path = ByvImagePicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		067226B3D3C1857C0EE03C59111283CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83551D272744A2D5CF44BE36A978403 /* ByvImagePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC5F78307B6F2CD368C58D57B9A64CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19B0186FF3411CBA6EB440FFD989AADB /* ByvUtils-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D993B88C10479096F17ADDEAB85D94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */,
+				8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */,
+				1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */,
+				DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */,
+				F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		900DED86713E1E637B361F5B34233D0E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA5F1D63357142AC9768051378444062 /* TOActivityCroppedImageProvider.h in Headers */,
+				CD041F53568AD9E58E90D2DCD5CCAAF4 /* TOCropOverlayView.h in Headers */,
+				BE4D86C835362F2FEC5177BA43A9AD10 /* TOCroppedImageAttributes.h in Headers */,
+				2E13BB841A85A381A2F45F8CDD28F9D7 /* TOCropScrollView.h in Headers */,
+				EF80B05855102119EE73E479E5ADAA67 /* TOCropToolbar.h in Headers */,
+				22419B1E76D8B5647E05C3FB9953F8AD /* TOCropView.h in Headers */,
+				BA5E8C3A8A0FA8BAEB033D8143189298 /* TOCropViewController-Bridging-Header.h in Headers */,
+				2BF86444EEE97DDBBAA0DAAD84929AD6 /* TOCropViewController-umbrella.h in Headers */,
+				2E3257B453CEECC78DA4B3682613AA42 /* TOCropViewController.h in Headers */,
+				68DD41F90E6B9996BCCA0FD63F59300A /* TOCropViewControllerTransitioning.h in Headers */,
+				604DD558728F3929E65DF1DA1BF70221 /* UIImage+CropRotate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0A1DF130E97C4755B09863D7F1AD5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */,
+				4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */,
+				D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */,
+				B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */,
+				C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */,
+				11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */,
+				DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA14083FB2199F8041B799BA40302E88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4787C92B48FE431FA28D6968D32B02C9 /* SwiftKeychainWrapper-umbrella.h in Headers */,
+				0AB5343B433590442B041B0811BACD4A /* SwiftKeychainWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA8043BD1F12F6C3BBD12D6F5EA7A4BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66A17088D89BA82E03F7A9CA38AEA7A0 /* Pods-AMMChat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F8E8C4EC570113E48309505F1111748 /* TOCropViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B88371D4439B9AA844C66E814187861 /* Build configuration list for PBXNativeTarget "TOCropViewController" */;
+			buildPhases = (
+				62F9B084E1B2E702E9BA3A1FD94642CB /* Sources */,
+				F5E57CA44B8CEB99C0B062337FBFA9F8 /* Frameworks */,
+				89BB0BBF2443E50C46CD67527BCD8CAA /* Resources */,
+				900DED86713E1E637B361F5B34233D0E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA29296D80FD670A4E4CA517622E0EF9 /* PBXTargetDependency */,
+			);
+			name = TOCropViewController;
+			productName = TOCropViewController;
+			productReference = 349B8F702C2B21D383931AC31056841F /* TOCropViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3166596B665E06C4B76C8ABB6AB06824 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				222F0DC2D2D238CAB82346DE258E5472 /* Sources */,
+				9DB2FD04E98E8D08B812CFAD3603A106 /* Frameworks */,
+				BB0A1DF130E97C4755B09863D7F1AD5F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = 66BBCD7DFA31201FB7AAA9066DDBB453 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		386090C7DFF033845D44093B443B05F6 /* ByvUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A2B687F50376690A8A9A20EAF923E6 /* Build configuration list for PBXNativeTarget "ByvUtils" */;
+			buildPhases = (
+				18D70CE3DB89DB2EFDD337F18165D0A1 /* Sources */,
+				9CE99921A2964F204DBFD141CC802BF3 /* Frameworks */,
+				6FC5F78307B6F2CD368C58D57B9A64CE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ByvUtils;
+			productName = ByvUtils;
+			productReference = 2CD0509C7DE4E33904A675B434CF409D /* ByvUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		44733126F820B2866D972478F6FE78B9 /* ByvImagePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59084BBB20874683A95222D262D86B57 /* Build configuration list for PBXNativeTarget "ByvImagePicker" */;
+			buildPhases = (
+				D7F1AF92491A2024EE732EFA2AA0767D /* Sources */,
+				101AD5C0EEE04A67B598E620C112E6CA /* Frameworks */,
+				067226B3D3C1857C0EE03C59111283CC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D16DFBA57A04452C25053E27A79ACE /* PBXTargetDependency */,
+				69C2F54F0DAD8B6B4117ACE2ED16DE2A /* PBXTargetDependency */,
+			);
+			name = ByvImagePicker;
+			productName = ByvImagePicker;
+			productReference = D877BAC26BEF6040EDA4B2FD7B2BDA52 /* ByvImagePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		53A46185EFDFE39FAB1B739D33D168DD /* SwiftKeychainWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A1190733B25402E3ACE0AC805C8A8B8 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */;
+			buildPhases = (
+				0B897BEB40C54BE7932278E7C46EA834 /* Sources */,
+				4D55B58CEFF0B0DD230D3F35C0E190C0 /* Frameworks */,
+				CA14083FB2199F8041B799BA40302E88 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKeychainWrapper;
+			productName = SwiftKeychainWrapper;
+			productReference = 82C148D6C6294F4AE08FA5DE0990D272 /* SwiftKeychainWrapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		90364F99C206BAA15EAA23AE90D825CC /* TOCropViewController-TOCropViewControllerBundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8513CBDF75916153FAB7DBD77ECBAAD4 /* Build configuration list for PBXNativeTarget "TOCropViewController-TOCropViewControllerBundle" */;
+			buildPhases = (
+				BF53B59CAAAB964A3B5B19D80E61397B /* Sources */,
+				FB9F0480B86399C9144EDB119FD6F726 /* Frameworks */,
+				61387DD2DD913AC8E73A6C023CC7FFDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TOCropViewController-TOCropViewControllerBundle";
+			productName = "TOCropViewController-TOCropViewControllerBundle";
+			productReference = 71D6A41195C33A92BB226F8A6821017D /* TOCropViewControllerBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CC8559AB6F51830204F1A9CE54BF3E /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				C5A309EC5A80A27DBD420C5176E2122A /* Sources */,
+				6AE88E96161DE195EAAF0A3B6375EA50 /* Frameworks */,
+				82D993B88C10479096F17ADDEAB85D94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = 3622C1147F14372E004FB135BDB737C8 /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FCCE6AC0F6977550524CBA5B370FBEF9 /* Pods-AMMChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9518775A3DC64364160739A685CE0B49 /* Build configuration list for PBXNativeTarget "Pods-AMMChat" */;
+			buildPhases = (
+				AAE01A333D6D35D249CB65BEEB9F0D22 /* Sources */,
+				4103C9286DD52C9ABA1883301A80713D /* Frameworks */,
+				CA8043BD1F12F6C3BBD12D6F5EA7A4BC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				630E55C12C56E4DB7FF15F29E7E78335 /* PBXTargetDependency */,
+				02A5F276FDC8B9554A5E357AC35A5D1C /* PBXTargetDependency */,
+				8A7C610C176EE1D8EF9CB97C300CAC2B /* PBXTargetDependency */,
+				C6CB8E1930F0A7EC8F4C6156487243C4 /* PBXTargetDependency */,
+				843AA2D10158294F9AC7F2D640D5B712 /* PBXTargetDependency */,
+				4CBFA8482E46E308FF0B265D1A1E4228 /* PBXTargetDependency */,
+			);
+			name = "Pods-AMMChat";
+			productName = "Pods-AMMChat";
+			productReference = 990DFBC1F61A93E4CE04B5BCAF3390EB /* Pods_AMMChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D9EF8B7B2E8116DA5D5902064B4B9E72 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44733126F820B2866D972478F6FE78B9 /* ByvImagePicker */,
+				386090C7DFF033845D44093B443B05F6 /* ByvUtils */,
+				107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */,
+				C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */,
+				FCCE6AC0F6977550524CBA5B370FBEF9 /* Pods-AMMChat */,
+				53A46185EFDFE39FAB1B739D33D168DD /* SwiftKeychainWrapper */,
+				0F8E8C4EC570113E48309505F1111748 /* TOCropViewController */,
+				90364F99C206BAA15EAA23AE90D825CC /* TOCropViewController-TOCropViewControllerBundle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		61387DD2DD913AC8E73A6C023CC7FFDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D640172525C64A5EA36B8F8ECC53DA7F /* ar.lproj in Resources */,
+				B5662D7FB2590E2FD2FDE4C96F6C4FA7 /* Base.lproj in Resources */,
+				FC813B0986B566F9E11178C308B95822 /* da.lproj in Resources */,
+				A7D5B50770DC8F15D1A63F99637AB644 /* de.lproj in Resources */,
+				A0C1202EB0736ACB43C5AE408AB8761D /* en.lproj in Resources */,
+				189CC2E649368E761DC2B80DCB9B68A7 /* es.lproj in Resources */,
+				8114AB59D899CAB7DF65308970690672 /* fr.lproj in Resources */,
+				054443D16EBF9DD512C69DC15D184C5C /* id.lproj in Resources */,
+				6C328783C082756E570E99A470C416C6 /* it.lproj in Resources */,
+				8C1E1563AFE4C98C4A9AB9B749CD275E /* ja.lproj in Resources */,
+				55D1857301D01A30D8FE8FBC04E2AD0B /* ko.lproj in Resources */,
+				9270764E1FB81668C6A7A2F4DA1263D5 /* nl.lproj in Resources */,
+				BE9B19448EB3A91075ACA1E0C9A817BF /* pl.lproj in Resources */,
+				9EA137E4B7C4ED9A66B761E2656D9D71 /* pt.lproj in Resources */,
+				9F12FDF2FA9DD017FC3DDF39017D4B8E /* ru.lproj in Resources */,
+				974004927D7031461931C644DA4A3A9E /* tr.lproj in Resources */,
+				B24FAD5F320C4CAA9FC84F93DEAD2F58 /* vi.lproj in Resources */,
+				279EAD5C5D9D44236D89AD8830CCF0DF /* zh-Hans.lproj in Resources */,
+				8D474402A4A6EBA4BBFAC8EED99E92C6 /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89BB0BBF2443E50C46CD67527BCD8CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F68500332A11402DE52D74A7874A444 /* TOCropViewControllerBundle.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B897BEB40C54BE7932278E7C46EA834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008E2EA0E6AA8CCDBE5EF05C69B4628D /* KeychainItemAccessibility.swift in Sources */,
+				3FF67AC426B16535E4BAF6C4AEAB0FBD /* KeychainWrapper.swift in Sources */,
+				18B269A9171F05B48CBB0F8CCBF51E04 /* SwiftKeychainWrapper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18D70CE3DB89DB2EFDD337F18165D0A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0509DCA4F20F08B6342C7B400824A6B3 /* ByvUtils-dummy.m in Sources */,
+				BE896539AD94302DC330F70782DE51DE /* CALayer+extension.swift in Sources */,
+				B919E9935A264B1E4A738319DAFBBABA /* Date+extension.swift in Sources */,
+				B2BC46374B1C138FCF22367283ED4C81 /* String+extension.swift in Sources */,
+				CFB4A3EB9CB57DFDC722731AA3D64352 /* UIAlertController+extension.swift in Sources */,
+				352BA2095D265F35BE11539DD19BB1E5 /* UIColor+extension.swift in Sources */,
+				21A5D6FDD8EA5A5B3876B5E726B4351F /* UIImage+extension.swift in Sources */,
+				AA18C94E131A513D3FB5102D740FECDC /* UIView+extension.swift in Sources */,
+				3B253E4E8B27312471F6044D91457F8C /* UIViewController+extension.swift in Sources */,
+				6B240F3BFBAD5609C87DE968AB1027C1 /* URL+extension.swift in Sources */,
+				C475F1665832F6937D9996F4FE1E454B /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222F0DC2D2D238CAB82346DE258E5472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */,
+				2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */,
+				E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */,
+				5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62F9B084E1B2E702E9BA3A1FD94642CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51308E3BA5C4C36BC97A21E786A67D7 /* TOActivityCroppedImageProvider.m in Sources */,
+				07152B0337E933B136E9E0D6E90FB8C5 /* TOCropOverlayView.m in Sources */,
+				B690FE98D0C6E60D30C258E0453D621F /* TOCroppedImageAttributes.m in Sources */,
+				1181220F3FF4811738DBCEB2A0D296E9 /* TOCropScrollView.m in Sources */,
+				2780964749DC0D086876E1D24112DA3F /* TOCropToolbar.m in Sources */,
+				692C72002221512DFC2955829126C531 /* TOCropView.m in Sources */,
+				09ACC2565F535EBA898B49BC58E72B9A /* TOCropViewController-dummy.m in Sources */,
+				64475DF23E99A804437904F3FCAA3736 /* TOCropViewController.m in Sources */,
+				7FC7BB77BD10C887444A494799862E71 /* TOCropViewControllerTransitioning.m in Sources */,
+				177FF04E316F921932BF736AA9D53DCB /* UIImage+CropRotate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE01A333D6D35D249CB65BEEB9F0D22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4585655178659F99B1DF8B907DC7A300 /* Pods-AMMChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF53B59CAAAB964A3B5B19D80E61397B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A309EC5A80A27DBD420C5176E2122A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */,
+				64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */,
+				07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */,
+				95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */,
+				F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F1AF92491A2024EE732EFA2AA0767D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17B92B1592BC19674EC35A8CF2123743 /* ByvImagePicker-dummy.m in Sources */,
+				744BE0510936F8034E66FC14D8785268 /* ByvImagePicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02A5F276FDC8B9554A5E357AC35A5D1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ByvUtils;
+			target = 386090C7DFF033845D44093B443B05F6 /* ByvUtils */;
+			targetProxy = E6CE5C0385B18E67AD03550560E7EEC7 /* PBXContainerItemProxy */;
+		};
+		4CBFA8482E46E308FF0B265D1A1E4228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TOCropViewController;
+			target = 0F8E8C4EC570113E48309505F1111748 /* TOCropViewController */;
+			targetProxy = 2E85E5FEB6C27C820091BCDB46875C75 /* PBXContainerItemProxy */;
+		};
+		630E55C12C56E4DB7FF15F29E7E78335 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ByvImagePicker;
+			target = 44733126F820B2866D972478F6FE78B9 /* ByvImagePicker */;
+			targetProxy = FE23AA5657FAEA8C3588372FBCD03228 /* PBXContainerItemProxy */;
+		};
+		69C2F54F0DAD8B6B4117ACE2ED16DE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TOCropViewController;
+			target = 0F8E8C4EC570113E48309505F1111748 /* TOCropViewController */;
+			targetProxy = 4529122DCF50F38CEA9B3E2C9364210F /* PBXContainerItemProxy */;
+		};
+		843AA2D10158294F9AC7F2D640D5B712 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftKeychainWrapper;
+			target = 53A46185EFDFE39FAB1B739D33D168DD /* SwiftKeychainWrapper */;
+			targetProxy = 3D3DB544E727D841CAF7FE4470C0859E /* PBXContainerItemProxy */;
+		};
+		8A7C610C176EE1D8EF9CB97C300CAC2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */;
+			targetProxy = C66A9BD073857ADFA9AF8D3993E1D755 /* PBXContainerItemProxy */;
+		};
+		AA29296D80FD670A4E4CA517622E0EF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "TOCropViewController-TOCropViewControllerBundle";
+			target = 90364F99C206BAA15EAA23AE90D825CC /* TOCropViewController-TOCropViewControllerBundle */;
+			targetProxy = 10E9CDEBA494A7E6DD93313E45C3A561 /* PBXContainerItemProxy */;
+		};
+		B9D16DFBA57A04452C25053E27A79ACE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ByvUtils;
+			target = 386090C7DFF033845D44093B443B05F6 /* ByvUtils */;
+			targetProxy = 05A46B57F5EA3F2D2E27AEC3AF975080 /* PBXContainerItemProxy */;
+		};
+		C6CB8E1930F0A7EC8F4C6156487243C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */;
+			targetProxy = 287D17A5593F7F3AF063BA5F3FDBDFB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A28B81FA3883476741FD932BE57D9ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F071EFFC25E41175ECB7F843FAB7021 /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39F08C6FCC0118F0CA58F742AF9DB44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4FAE0DBFC9DEAB7F88F01CB426394C /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3AF861AEADA89A377F12178D493BED95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AAA19829E65DF6206FE7B38F0BDA70 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4158043BEBD9D3631012937E1BFC37FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04BDEFB9CF7C2492BD420404E74002C9 /* ByvUtils.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ByvUtils/ByvUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ByvUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ByvUtils/ByvUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ByvUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4A2C43DC80CBF545E1C70FE5EBCCDC6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4FAE0DBFC9DEAB7F88F01CB426394C /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TOCropViewController/TOCropViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = TOCropViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		61FFD2FDA14A23672D58FE7A7D869437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04BDEFB9CF7C2492BD420404E74002C9 /* ByvUtils.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ByvUtils/ByvUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ByvUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ByvUtils/ByvUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ByvUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B22D67AA68476CBFEDFF27B1C38823C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4FAE0DBFC9DEAB7F88F01CB426394C /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/TOCropViewController";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/ResourceBundle-TOCropViewControllerBundle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = TOCropViewControllerBundle;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		881B19BB9961D509DACE94450066151E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AAA19829E65DF6206FE7B38F0BDA70 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97706573D3826DDEDA9505E75C180145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4FAE0DBFC9DEAB7F88F01CB426394C /* TOCropViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TOCropViewController/TOCropViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TOCropViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TOCropViewController/TOCropViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = TOCropViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9C7324D0ADEABED7BC7B2D9C608C5E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823525ADD00E8716AE4F57212E48CD64 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C88317FE75A5FEE38E3BA542918D2269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E21050CD0E815C1040BF58648EDB2B /* ByvImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ByvImagePicker/ByvImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ByvImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ByvImagePicker/ByvImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ByvImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA390D9D52D63A88634791BEB48E57CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 717BE0A35C59675D0E485A2AEBE9E946 /* Pods-AMMChat.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AMMChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMMChat/Pods-AMMChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AMMChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED969C86CBBA712335D5E741625E75B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 823525ADD00E8716AE4F57212E48CD64 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F29653856742DBE721A3414BCD55C60E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E21050CD0E815C1040BF58648EDB2B /* ByvImagePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ByvImagePicker/ByvImagePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ByvImagePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ByvImagePicker/ByvImagePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ByvImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7CDDB59EE6F8CA9F93FC7C074A08C33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90874EB17040427A5DF66B3AA485E277 /* Pods-AMMChat.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AMMChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AMMChat/Pods-AMMChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AMMChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAA0EE86547AA94DE560E610A3482BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F071EFFC25E41175ECB7F843FAB7021 /* SwiftKeychainWrapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftKeychainWrapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftKeychainWrapper/SwiftKeychainWrapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftKeychainWrapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3166596B665E06C4B76C8ABB6AB06824 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AF861AEADA89A377F12178D493BED95 /* Debug */,
+				881B19BB9961D509DACE94450066151E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B88371D4439B9AA844C66E814187861 /* Build configuration list for PBXNativeTarget "TOCropViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97706573D3826DDEDA9505E75C180145 /* Debug */,
+				4A2C43DC80CBF545E1C70FE5EBCCDC6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59084BBB20874683A95222D262D86B57 /* Build configuration list for PBXNativeTarget "ByvImagePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88317FE75A5FEE38E3BA542918D2269 /* Debug */,
+				F29653856742DBE721A3414BCD55C60E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A1190733B25402E3ACE0AC805C8A8B8 /* Build configuration list for PBXNativeTarget "SwiftKeychainWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA0EE86547AA94DE560E610A3482BA4 /* Debug */,
+				1A28B81FA3883476741FD932BE57D9ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8513CBDF75916153FAB7DBD77ECBAAD4 /* Build configuration list for PBXNativeTarget "TOCropViewController-TOCropViewControllerBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39F08C6FCC0118F0CA58F742AF9DB44C /* Debug */,
+				6B22D67AA68476CBFEDFF27B1C38823C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9518775A3DC64364160739A685CE0B49 /* Build configuration list for PBXNativeTarget "Pods-AMMChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA390D9D52D63A88634791BEB48E57CD /* Debug */,
+				F7CDDB59EE6F8CA9F93FC7C074A08C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A2B687F50376690A8A9A20EAF923E6 /* Build configuration list for PBXNativeTarget "ByvUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4158043BEBD9D3631012937E1BFC37FD /* Debug */,
+				61FFD2FDA14A23672D58FE7A7D869437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CC8559AB6F51830204F1A9CE54BF3E /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9C7324D0ADEABED7BC7B2D9C608C5E0 /* Debug */,
+				ED969C86CBBA712335D5E741625E75B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

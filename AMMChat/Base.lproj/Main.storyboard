@@ -424,6 +424,7 @@
                         <outlet property="emailTextField" destination="4fq-x0-gZW" id="imI-Pc-Yei"/>
                         <outlet property="passwordTextField" destination="aKw-Sf-jiC" id="9wk-Su-hQc"/>
                         <outlet property="scrollView" destination="xxr-SJ-fjZ" id="zyl-Yl-NET"/>
+                        <segue destination="nh9-2k-tOL" kind="show" identifier="goToChat" id="s1A-bm-1d6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IZN-oH-0x1" userLabel="First Responder" sceneMemberID="firstResponder"/>

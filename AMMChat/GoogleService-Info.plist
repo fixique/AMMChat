@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>48746841736-8cgg41tpfgf4riliu9nhkkiarc4q3t65.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.48746841736-8cgg41tpfgf4riliu9nhkkiarc4q3t65</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAPdBZdSEne3O_GyBNdYwGzMdRUpkCDgE8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>48746841736</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>me.janesv.AMMChat</string>
+	<key>PROJECT_ID</key>
+	<string>ammchat-f9f49</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ammchat-f9f49.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:48746841736:ios:98c67c8be0268cab</string>
+	<key>DATABASE_URL</key>
+	<string>https://ammchat-f9f49.firebaseio.com</string>
+</dict>
+</plist>
