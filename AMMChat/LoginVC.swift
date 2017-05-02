@@ -87,7 +87,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     print("LOG: Email user authenticated with Firebase")
                     if let user = user {
                         let userData = ["provider": user.providerID]
-                        self.completeSignIn(id: user.uid, userData: userData)
+                        self.completeSignIn(id: user.uid, userData: userData, status: false)
                     }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
@@ -99,8 +99,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         } else {
                             print("LOG: Successfuly authenticated with firebase")
                             if let user = user {
-                                let userData = ["provider": user.providerID]
-                                self.completeSignIn(id: user.uid, userData: userData)
+                                let userData = ["provider": user.providerID,
+                                                "username": "Ваше имя и фамилия",
+                                                "course": "1 курс 1 группа",
+                                                "avatar": ""]
+                                self.completeSignIn(id: user.uid, userData: userData, status: true)
                             }
                         }
                     })
@@ -110,8 +113,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
     }
     
-    func completeSignIn(id: String, userData: Dictionary<String, String>) {
-        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+    func completeSignIn(id: String, userData: Dictionary<String, String>, status: Bool) {
+        if status {
+            DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        }
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("LOG: Data saved to keychain \(keychainResult)")
         performSegue(withIdentifier: "goToChat", sender: nil)
