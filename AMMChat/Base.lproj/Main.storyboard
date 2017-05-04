@@ -167,7 +167,7 @@
                                         <rect key="frame" x="0.0" y="30" width="320" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pGY-O5-ap3" id="MV1-bA-FdL">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="249.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заголовок новости Заголовок новости Заголовок новости " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WwZ-ro-ayu">
@@ -256,7 +256,7 @@
                     <connections>
                         <outlet property="tableView" destination="F0I-Kf-c26" id="LII-rY-csb"/>
                         <segue destination="fwZ-rw-06A" kind="presentation" identifier="openMenu" id="bnC-Xo-Jse"/>
-                        <segue destination="XxD-Ai-rzK" kind="show" id="TJN-cz-s4N"/>
+                        <segue destination="XxD-Ai-rzK" kind="show" identifier="nouse" id="TJN-cz-s4N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR4-3b-rAM" userLabel="First Responder" sceneMemberID="firstResponder"/>

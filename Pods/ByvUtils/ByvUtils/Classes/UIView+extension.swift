@@ -89,14 +89,14 @@ public extension UIView {
         for view in subViews {
             view.translatesAutoresizingMaskIntoConstraints = false
             self.addSubview(view)
-            let views = ["view" : view, "preView": preView]
+            let views: [String: UIView] = ["view" : view, "preView": preView!]
             var formatString = "H:"
             if direction == .horizontal {
                 formatString = "V:"
             }
             
             formatString += "|-(\(insets.left))-[view]-(\(insets.right))-|"
-            var constraints = NSLayoutConstraint.constraints(withVisualFormat: formatString, options:[] , metrics: nil, views: views)
+            var constraints = NSLayoutConstraint.constraints(withVisualFormat: formatString, options:[] , metrics: nil, views: views )
             
             NSLayoutConstraint.activate(constraints)
             
