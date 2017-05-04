@@ -7,6 +7,26 @@
 //
 
 import Foundation
+import CoreData
+
+var currentUser: User!
+let KEY_UID = "uid"
+
+func deleteAllData(_ entity: String) {
+    let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+    fetchRequest.returnsObjectsAsFaults = false
+    
+    do {
+        let results = try context.fetch(fetchRequest)
+        for managedObject in results {
+            let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
+            context.delete(managedObjectData)
+            ad.saveContext()
+        }
+    } catch let error as NSError {
+        print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
+    }
+}
 
 let courses = ["1 курс 1 группа",
                "1 курс 2 группа",

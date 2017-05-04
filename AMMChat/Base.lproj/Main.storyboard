@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testavatar" translatesAutoresizingMaskIntoConstraints="NO" id="RUN-2E-qHo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="RUN-2E-qHo">
                                 <rect key="frame" x="66" y="15" width="189" height="189"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="189" id="V2h-V3-LMZ"/>
@@ -116,7 +116,7 @@
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem title="В" id="fce-iS-Buu">
+                            <barButtonItem image="SignOut" id="fce-iS-Buu">
                                 <connections>
                                     <action selector="logoutBtnPressed:" destination="AjX-Pt-TcH" id="H2n-bB-rYg"/>
                                 </connections>
@@ -333,10 +333,10 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="4" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ypL-jJ-A2I">
                                 <rect key="frame" x="0.0" y="90" width="256" height="478"/>
-                                <color key="backgroundColor" red="0.06266949325799942" green="0.25556200742721558" blue="0.58988374471664429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" red="0.062745098039215685" green="0.25490196078431371" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="wHR-a5-25w" userLabel="footer">
                                     <rect key="frame" x="0.0" y="83" width="256" height="44"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -353,7 +353,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профиль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YnS-1m-5Nz">
                                                     <rect key="frame" x="36" y="17" width="212" height="21"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" red="0.24313725490196078" green="0.56470588235294117" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-m6-1G6">
@@ -372,7 +372,7 @@
                                                 <constraint firstItem="YnS-1m-5Nz" firstAttribute="trailing" secondItem="kZI-To-SyT" secondAttribute="trailingMargin" id="y67-AZ-Fhi"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.06266949325799942" green="0.25556200742721558" blue="0.58988374471664429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="menuItemImg" destination="VIe-m6-1G6" id="CPU-Jk-Y3m"/>
@@ -405,6 +405,8 @@
                     <connections>
                         <outlet property="personAvatar" destination="AA2-jo-Vfa" id="Xjs-un-mRj"/>
                         <outlet property="tableView" destination="ypL-jJ-A2I" id="eeO-20-9rL"/>
+                        <outlet property="userCourse" destination="GGJ-b3-2ZL" id="vG8-xk-9a5"/>
+                        <outlet property="userName" destination="c4x-HX-Yzq" id="s0P-ye-iIC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gi3-6j-cuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -590,12 +592,16 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rT-QJ-MJq">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2Ky-6p-XOy">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptyAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="2Ky-6p-XOy">
                                         <rect key="frame" x="65" y="9" width="189" height="189"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="189" id="0JE-XB-0Ya"/>
                                             <constraint firstAttribute="height" constant="189" id="ZkL-Ex-61i"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pfW-13-AYW" appends="YES" id="1mV-es-WDO"/>
+                                        </connections>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите на иконку, чтобы выбрать фото" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4R-Ds-jJj">
                                         <rect key="frame" x="52" y="206" width="215" height="20"/>
@@ -678,6 +684,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mvR-3d-HFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pfW-13-AYW">
+                    <connections>
+                        <action selector="selectPhotoTapped:" destination="qRv-Af-Rq7" id="LtV-AU-vzm"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2540.625" y="485.91549295774649"/>
         </scene>
@@ -713,11 +724,11 @@
         <image name="AmmLogo" width="189" height="189"/>
         <image name="LoginBG" width="375" height="667"/>
         <image name="Mark.jpg" width="1500" height="1125"/>
+        <image name="SignOut" width="20" height="20"/>
         <image name="clock" width="34" height="35"/>
         <image name="emptyAvatar" width="189" height="189"/>
         <image name="menubutton" width="15" height="17"/>
         <image name="profile" width="30" height="30"/>
-        <image name="testavatar" width="189" height="189"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4Fd-si-jBT"/>

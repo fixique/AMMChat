@@ -52,16 +52,16 @@ public class ByvImagePicker: NSObject, UIImagePickerControllerDelegate, UINaviga
         pickerCompletion = completion
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            av.addAction(UIAlertAction(title: NSLocalizedString("Sacar foto", comment:""), style: .default, handler: { (action) in
+            av.addAction(UIAlertAction(title: NSLocalizedString("Сделать фото", comment:""), style: .default, handler: { (action) in
                 self.getCameraImage(from: from.controller, completion: completion)
             }))
         }
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
-            av.addAction(UIAlertAction(title: NSLocalizedString("Imagen de mi galería", comment:""), style: .default, handler: { (action) in
+            av.addAction(UIAlertAction(title: NSLocalizedString("Выбрать фото", comment:""), style: .default, handler: { (action) in
                 self.getLibraryImage(from: from, completion: completion)
             }))
         }
-        av.addAction(UIAlertAction(title: NSLocalizedString("Cancelar", comment: ""), style: .cancel, handler: { (action) in
+        av.addAction(UIAlertAction(title: NSLocalizedString("Отмена", comment: ""), style: .cancel, handler: { (action) in
             completion(nil)
             av.dismiss(animated: true, completion: nil)
         }))

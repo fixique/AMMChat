@@ -12,6 +12,8 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var personAvatar: UIImageView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userCourse: UILabel!
     
     
     var interactor: Interactor? = nil
@@ -34,6 +36,20 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if currentUser != nil {
+            userName.text = currentUser.userName
+            userCourse.text = currentUser.course
+            
+            if currentUser.avatar != "" {
+                if !ProfileVC.userAvatars.isEmpty {
+                    personAvatar.image = ProfileVC.userAvatars.last?.image as? UIImage
+                }
+            }
+        }
         
     }
     
@@ -88,14 +104,14 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         var menuItems: [MenuItem] = []
         
-        let profile = MenuItem(title: "Профиль", image: #imageLiteral(resourceName: "profile"))
-        let friends = MenuItem(title: "Друзья", image: #imageLiteral(resourceName: "Friends"))
+        let profile = MenuItem(title: "Мой Профиль", image: #imageLiteral(resourceName: "profile"))
+        let friends = MenuItem(title: "Найти друзей", image: #imageLiteral(resourceName: "Friends"))
         let chats = MenuItem(title: "Чаты", image: #imageLiteral(resourceName: "ChatMenu"))
-        let logout = MenuItem(title: "Выйти", image: #imageLiteral(resourceName: "LogoutMenu"))
+        let news = MenuItem(title: "Новости ПММ", image: #imageLiteral(resourceName: "newsIcon"))
         menuItems.append(profile)
-        menuItems.append(friends)
+        menuItems.append(news)
         menuItems.append(chats)
-        menuItems.append(logout)
+        menuItems.append(friends)
         
         return menuItems
     }
