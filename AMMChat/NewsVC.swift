@@ -7,31 +7,62 @@
 //
 
 import UIKit
+import Firebase
 
 class NewsVC: MainVC, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
-    
-    var news: [NewsItem] = []
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    var news = [NewsItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        news = generateNewsItems()
+//        news = generateNewsItems()
         
         tableView.delegate = self
         tableView.dataSource = self
         tableView.estimatedRowHeight = 330
+        
+        DataService.ds.REF_NEWS.observe(.value, with: { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                self.news.removeAll()
+                for snap in snapshot {
+                    print("SNAP: \(snap)")
+                    if let newsDict = snap.value as? Dictionary<String, Any> {
+                        let key = snap.key
+                        let news = NewsItem(postKey: key, postData: newsDict)
+                        self.news.append(news)
+                    }
+                }
+            }
+            self.news = self.news.reversed()
+            self.tableView.reloadData()
+        })
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.titleTextAttributes =
+            [NSForegroundColorAttributeName: UIColor.white,
+             NSFontAttributeName: UIFont(name: "AvenirNext-DemiBold", size: 21)!]
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewsItemCell
-        configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+        let news = self.news[indexPath.row]
         
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? NewsItemCell {
+            if let img = NewsVC.imageCache.object(forKey: news.newsImage as NSString) {
+                cell.configureCell(item: news, img: img)
+            } else {
+                cell.configureCell(item: news)
+            }
+            return cell
+        } else {
+            return NewsItemCell()
+        }
     }
     
     func configureCell(cell: NewsItemCell, indexPath: NSIndexPath) {
@@ -40,11 +71,28 @@ class NewsVC: MainVC, UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(item: item)
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        tableView.deselectRow(at: indexPath, animated: true)
-//        menuActionDelegate?.selectTab(indexPath.row)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if news.count > 0 {
+            
+            let item = news[indexPath.row]
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newsDetailVC = mainStoryboard.instantiateViewController(withIdentifier: "NewsDetailVC") as! NewsDetailVC
+            newsDetailVC.itemToShow = item
+            self.navigationController?.pushViewController(newsDetailVC, animated: true)
+        }
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        
+//        if segue.identifier == "NewsDetailVC" {
+//            if let destination = segue.destination as? NewsDetailVC {
+//                if let item = sender as? NewsItem {
+//                    destination.itemToShow = item
+//                }
+//            }
+//        }
 //    }
-//    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return news.count
     }
