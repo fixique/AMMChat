@@ -158,6 +158,7 @@ class EditProfileVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
                                 let course = courses[self.coursePicker.selectedRow(inComponent: 0)]
                                 let avatar = url
                                 ref.updateChildValues(["username": userName!,
+                                                       "lowcasename" : userName!.lowercased(),
                                                        "course" : course,
                                                        "avatar" : avatar])
                                 self.popUpView()
@@ -171,6 +172,7 @@ class EditProfileVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
             let userName = userNameTextField.text
             let course = courses[coursePicker.selectedRow(inComponent: 0)]
             ref.updateChildValues(["username" : userName!,
+                                   "lowcasename" : userName!.lowercased(),
                                    "course" : course])
             self.popUpView()
         }

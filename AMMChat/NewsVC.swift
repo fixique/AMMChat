@@ -65,11 +65,11 @@ class NewsVC: MainVC, UITableViewDelegate, UITableViewDataSource {
         }
     }
     
-    func configureCell(cell: NewsItemCell, indexPath: NSIndexPath) {
-        
-        let item = news[indexPath.row]
-        cell.configureCell(item: item)
-    }
+//    func configureCell(cell: NewsItemCell, indexPath: NSIndexPath) {
+//        
+//        let item = news[indexPath.row]
+//        cell.configureCell(item: item)
+//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if news.count > 0 {

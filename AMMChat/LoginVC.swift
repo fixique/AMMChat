@@ -100,9 +100,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                             print("LOG: Successfuly authenticated with firebase")
                             if let user = user {
                                 let userData = ["provider": user.providerID,
-                                                "username": "Ваше имя и фамилия",
+                                                "username": "Нет имени(",
                                                 "course": "1 курс 1 группа",
-                                                "avatar": ""]
+                                                "avatar": "",
+                                                "lowcasename" : "нет имени("]
                                 self.completeSignIn(id: user.uid, userData: userData, status: true)
                             }
                         }

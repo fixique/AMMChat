@@ -20,6 +20,9 @@
 		4D0DBA1E1EBB492500FC75E5 /* UserAvatar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA1C1EBB492400FC75E5 /* UserAvatar+CoreDataClass.swift */; };
 		4D0DBA1F1EBB492500FC75E5 /* UserAvatar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA1D1EBB492500FC75E5 /* UserAvatar+CoreDataProperties.swift */; };
 		4D0DBA211EBB74B200FC75E5 /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA201EBB74B200FC75E5 /* NewsDetailVC.swift */; };
+		4D0DBA231EBBCD1C00FC75E5 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA221EBBCD1B00FC75E5 /* ChatsVC.swift */; };
+		4D0DBA251EBBCD3200FC75E5 /* FindFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA241EBBCD3200FC75E5 /* FindFriendsVC.swift */; };
+		4D0DBA271EBBD66600FC75E5 /* searchFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA261EBBD66600FC75E5 /* searchFriendsCell.swift */; };
 		4D6AA9761EB788F70049EC99 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9751EB788F70049EC99 /* NewsVC.swift */; };
 		4D6AA97A1EB78A7A0049EC99 /* NewsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9791EB78A7A0049EC99 /* NewsItemCell.swift */; };
 		4D6AA97C1EB78B090049EC99 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA97B1EB78B090049EC99 /* NewsItem.swift */; };
@@ -58,6 +61,9 @@
 		4D0DBA1C1EBB492400FC75E5 /* UserAvatar+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserAvatar+CoreDataClass.swift"; sourceTree = "<group>"; };
 		4D0DBA1D1EBB492500FC75E5 /* UserAvatar+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserAvatar+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		4D0DBA201EBB74B200FC75E5 /* NewsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDetailVC.swift; sourceTree = "<group>"; };
+		4D0DBA221EBBCD1B00FC75E5 /* ChatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		4D0DBA241EBBCD3200FC75E5 /* FindFriendsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsVC.swift; sourceTree = "<group>"; };
+		4D0DBA261EBBD66600FC75E5 /* searchFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchFriendsCell.swift; sourceTree = "<group>"; };
 		4D6AA9751EB788F70049EC99 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		4D6AA9791EB78A7A0049EC99 /* NewsItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemCell.swift; sourceTree = "<group>"; };
 		4D6AA97B1EB78B090049EC99 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 				4D6AA9811EB7E32D0049EC99 /* LoginTextField.swift */,
 				4D6AA98B1EB8B9BF0049EC99 /* BlueCorenerTextField.swift */,
 				4D6AA98D1EB8D0160049EC99 /* BlueBtn.swift */,
+				4D0DBA261EBBD66600FC75E5 /* searchFriendsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,6 +203,8 @@
 				4D6AA9831EB7F30C0049EC99 /* LoginVC.swift */,
 				4D6AA98F1EB8DB810049EC99 /* EditProfileVC.swift */,
 				4D0DBA201EBB74B200FC75E5 /* NewsDetailVC.swift */,
+				4D0DBA221EBBCD1B00FC75E5 /* ChatsVC.swift */,
+				4D0DBA241EBBCD3200FC75E5 /* FindFriendsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -339,6 +348,8 @@
 				4D6AA9931EB8DFEC0049EC99 /* Constants.swift in Sources */,
 				4D6AA9821EB7E32D0049EC99 /* LoginTextField.swift in Sources */,
 				4D6AA97A1EB78A7A0049EC99 /* NewsItemCell.swift in Sources */,
+				4D0DBA231EBBCD1C00FC75E5 /* ChatsVC.swift in Sources */,
+				4D0DBA271EBBD66600FC75E5 /* searchFriendsCell.swift in Sources */,
 				4D6AA98C1EB8B9BF0049EC99 /* BlueCorenerTextField.swift in Sources */,
 				4D6AA9901EB8DB810049EC99 /* EditProfileVC.swift in Sources */,
 				4D0D84521EB545CF006D9996 /* MainVC.swift in Sources */,
@@ -352,6 +363,7 @@
 				4D6AA97E1EB7929B0049EC99 /* TableViewCell.swift in Sources */,
 				4D0D846C1EB556B7006D9996 /* DismissMenuAnimator.swift in Sources */,
 				4D6AA98A1EB8068E0049EC99 /* DataService.swift in Sources */,
+				4D0DBA251EBBCD3200FC75E5 /* FindFriendsVC.swift in Sources */,
 				4D0D84641EB54D2F006D9996 /* Interactor.swift in Sources */,
 				4D6AA9761EB788F70049EC99 /* NewsVC.swift in Sources */,
 				4D6AA9801EB7E1BF0049EC99 /* LoginBtn.swift in Sources */,
