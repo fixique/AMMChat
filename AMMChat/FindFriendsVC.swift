@@ -70,20 +70,7 @@ class FindFriendsVC: MainVC, UITableViewDelegate, UITableViewDataSource, UISearc
         } else {
             return searchFriendsCell()
         }
-        
-        
-//        let news = self.news[indexPath.row]
-//        
-//        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? NewsItemCell {
-//            if let img = NewsVC.imageCache.object(forKey: news.newsImage as NSString) {
-//                cell.configureCell(item: news, img: img)
-//            } else {
-//                cell.configureCell(item: news)
-//            }
-//            return cell
-//        } else {
-//            return NewsItemCell()
-//        }
+    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

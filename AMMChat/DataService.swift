@@ -22,6 +22,7 @@ class DataService {
     private var _REF_BASE = DB_BASE
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_NEWS = DB_BASE.child("news")
+    private var _REF_FRIENDLIST = DB_BASE.child("friendlist")
     
     // Storage references
     private var _REF_STORAGE_BASE = FIRStorage.storage()
@@ -44,6 +45,12 @@ class DataService {
     
     var REF_NEWS: FIRDatabaseReference {
         return _REF_NEWS
+    }
+    
+    var REF_FRIENDLIST: FIRDatabaseReference {
+        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
+        let path = _REF_FRIENDLIST.child(uid!)
+        return path
     }
     
     var REF_TO_SAVE_AVATAR: FIRStorageReference {

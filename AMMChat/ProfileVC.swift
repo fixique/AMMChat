@@ -10,18 +10,23 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class ProfileVC: MainVC {
+class ProfileVC: MainVC, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userCourse: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     static var userAvatars: [UserAvatar] = []
+    var firendsList = [User]()
     var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     var layer: UIView! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
         
         userAvatar.layer.cornerRadius = 189 / 2
         userAvatar.clipsToBounds = true
@@ -37,6 +42,18 @@ class ProfileVC: MainVC {
         layer.addSubview(activityIndicator)
         activityIndicator.startAnimating()
         self.view.addSubview(layer)
+        
+//        DataService.ds.REF_FRIENDLIST.observe(.value, with: { (snapshot) in
+//            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+//                self.firendsList.removeAll()
+//                for snap in snapshot {
+//                    let friend = User(snapshot: snap)
+//                    self.firendsList.append(friend)
+//                }
+//            }
+//            self.tableView.reloadData()
+//        })
+
         
     }
     
@@ -54,6 +71,30 @@ class ProfileVC: MainVC {
             
         }
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let friend = self.firendsList[indexPath.row]
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "friendlistCell") as? friendListCell {
+            cell.configureCell(item: friend)
+            
+            return cell
+        } else {
+            return friendListCell()
+        }
+    }
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return firendsList.count
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    
     
     func updateUI() {
         if currentUser != nil {

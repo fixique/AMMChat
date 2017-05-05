@@ -14,12 +14,30 @@ class searchFriendsCell: UITableViewCell {
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var course: UILabel!
+    @IBOutlet weak var addBtn: UIImageView!
+    
+    var userID: String!
+    var addRef: FIRDatabaseReference!
+
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(addTapped))
+        tap.numberOfTapsRequired = 1
+        addBtn.addGestureRecognizer(tap)
+        addBtn.isUserInteractionEnabled = true
+    }
     
     func configureCell(item: User, img: UIImage? = nil) {
         name.text = item.userName
         course.text = item.course
         userAvatar.layer.cornerRadius = 55 / 2
         userAvatar.clipsToBounds = true
+        userID = item.snapKey
+        
+        addRef = DataService.ds.REF_FRIENDLIST.child(userID)
+
         
         if img != nil {
             //TODO: set cache images
@@ -40,6 +58,36 @@ class searchFriendsCell: UITableViewCell {
             })
         }
         
+        addRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.addBtn.image = #imageLiteral(resourceName: "addFriendBtn")
+            } else {
+                self.addBtn.image = nil
+            }
+        })
+        
     }
+    
+    func addTapped(sender: UITapGestureRecognizer) {
+        addRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value as? NSNull {
+                self.addBtn.image = nil
+                DataService.ds.REF_FRIENDLIST.updateChildValues([self.userID : self.userID])
+            } else {
+                self.addBtn.image = #imageLiteral(resourceName: "addFriendBtn")
+                
+            }
+        })
+
+        
+        
+//        DataService.ds.REF_FRIENDLIST
+//        let frID = NSUUID().uuidString
+//        DataService.ds.REF_FRIENDLIST.setValue([frID : userID])
+//        addBtn.image = nil
+    }
+
+    
+    
 
 }

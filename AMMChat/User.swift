@@ -15,6 +15,7 @@ class User {
     var course: String
     var avatar: String
     var provider: String
+    var snapKey: String
     
     init(name: String, course: String, avatar: String, provider: String, lowcasename: String) {
         self.userName = name
@@ -22,9 +23,11 @@ class User {
         self.course = course
         self.avatar = avatar
         self.provider = provider
+        self.snapKey = ""
     }
     
     init(snapshot: FIRDataSnapshot) {
+        self.snapKey = snapshot.key
         let snapshotValue = snapshot.value as! [String: AnyObject]
         self.userName = snapshotValue["username"] as! String
         self.lowcasename = snapshotValue["lowcasename"] as! String

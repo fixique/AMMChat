@@ -23,10 +23,10 @@
 		4D0DBA231EBBCD1C00FC75E5 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA221EBBCD1B00FC75E5 /* ChatsVC.swift */; };
 		4D0DBA251EBBCD3200FC75E5 /* FindFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA241EBBCD3200FC75E5 /* FindFriendsVC.swift */; };
 		4D0DBA271EBBD66600FC75E5 /* searchFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0DBA261EBBD66600FC75E5 /* searchFriendsCell.swift */; };
+		4D5ED76B1EBBF7460054A041 /* friendListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5ED76A1EBBF7460054A041 /* friendListCell.swift */; };
 		4D6AA9761EB788F70049EC99 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9751EB788F70049EC99 /* NewsVC.swift */; };
 		4D6AA97A1EB78A7A0049EC99 /* NewsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9791EB78A7A0049EC99 /* NewsItemCell.swift */; };
 		4D6AA97C1EB78B090049EC99 /* NewsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA97B1EB78B090049EC99 /* NewsItem.swift */; };
-		4D6AA97E1EB7929B0049EC99 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA97D1EB7929B0049EC99 /* TableViewCell.swift */; };
 		4D6AA9801EB7E1BF0049EC99 /* LoginBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA97F1EB7E1BF0049EC99 /* LoginBtn.swift */; };
 		4D6AA9821EB7E32D0049EC99 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9811EB7E32D0049EC99 /* LoginTextField.swift */; };
 		4D6AA9841EB7F30C0049EC99 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6AA9831EB7F30C0049EC99 /* LoginVC.swift */; };
@@ -64,10 +64,10 @@
 		4D0DBA221EBBCD1B00FC75E5 /* ChatsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
 		4D0DBA241EBBCD3200FC75E5 /* FindFriendsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsVC.swift; sourceTree = "<group>"; };
 		4D0DBA261EBBD66600FC75E5 /* searchFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchFriendsCell.swift; sourceTree = "<group>"; };
+		4D5ED76A1EBBF7460054A041 /* friendListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = friendListCell.swift; sourceTree = "<group>"; };
 		4D6AA9751EB788F70049EC99 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
 		4D6AA9791EB78A7A0049EC99 /* NewsItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItemCell.swift; sourceTree = "<group>"; };
 		4D6AA97B1EB78B090049EC99 /* NewsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsItem.swift; sourceTree = "<group>"; };
-		4D6AA97D1EB7929B0049EC99 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		4D6AA97F1EB7E1BF0049EC99 /* LoginBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginBtn.swift; sourceTree = "<group>"; };
 		4D6AA9811EB7E32D0049EC99 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		4D6AA9831EB7F30C0049EC99 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -168,7 +168,6 @@
 				4D0D84631EB54D2F006D9996 /* Interactor.swift */,
 				4DCD87491EB68B3C00B5177F /* MenuCell.swift */,
 				4D6AA9791EB78A7A0049EC99 /* NewsItemCell.swift */,
-				4D6AA97D1EB7929B0049EC99 /* TableViewCell.swift */,
 				4D0D84691EB54E9E006D9996 /* MenuHelper.swift */,
 				4D0D84671EB54E56006D9996 /* PresentMenuAnimator.swift */,
 				4D0D846B1EB556B7006D9996 /* DismissMenuAnimator.swift */,
@@ -177,6 +176,7 @@
 				4D6AA98B1EB8B9BF0049EC99 /* BlueCorenerTextField.swift */,
 				4D6AA98D1EB8D0160049EC99 /* BlueBtn.swift */,
 				4D0DBA261EBBD66600FC75E5 /* searchFriendsCell.swift */,
+				4D5ED76A1EBBF7460054A041 /* friendListCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -351,6 +351,7 @@
 				4D0DBA231EBBCD1C00FC75E5 /* ChatsVC.swift in Sources */,
 				4D0DBA271EBBD66600FC75E5 /* searchFriendsCell.swift in Sources */,
 				4D6AA98C1EB8B9BF0049EC99 /* BlueCorenerTextField.swift in Sources */,
+				4D5ED76B1EBBF7460054A041 /* friendListCell.swift in Sources */,
 				4D6AA9901EB8DB810049EC99 /* EditProfileVC.swift in Sources */,
 				4D0D84521EB545CF006D9996 /* MainVC.swift in Sources */,
 				4D0DBA1F1EBB492500FC75E5 /* UserAvatar+CoreDataProperties.swift in Sources */,
@@ -360,7 +361,6 @@
 				4D0DBA1E1EBB492500FC75E5 /* UserAvatar+CoreDataClass.swift in Sources */,
 				4D0DBA1B1EBB489000FC75E5 /* DataModel.xcdatamodeld in Sources */,
 				4D0D84501EB545CF006D9996 /* AppDelegate.swift in Sources */,
-				4D6AA97E1EB7929B0049EC99 /* TableViewCell.swift in Sources */,
 				4D0D846C1EB556B7006D9996 /* DismissMenuAnimator.swift in Sources */,
 				4D6AA98A1EB8068E0049EC99 /* DataService.swift in Sources */,
 				4D0DBA251EBBCD3200FC75E5 /* FindFriendsVC.swift in Sources */,
