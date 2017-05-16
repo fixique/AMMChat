@@ -12,5 +12,6 @@ target 'AMMChat' do
   pod 'Firebase/Storage'
   pod 'ByvImagePicker'
   pod 'SwiftKeychainWrapper'
+  pod 'JSQMessagesViewController'
 
 end

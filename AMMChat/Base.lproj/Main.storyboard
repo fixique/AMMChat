@@ -748,6 +748,7 @@
                     <connections>
                         <outlet property="tableView" destination="cZP-IY-Sau" id="8ef-zY-jhn"/>
                         <segue destination="fwZ-rw-06A" kind="presentation" identifier="openMenu" id="zue-BK-Obr"/>
+                        <segue destination="ym3-ti-FHu" kind="show" identifier="nouse" id="LLO-xv-JZn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E9U-wk-Wr5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -759,6 +760,25 @@
                 </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1642.5" y="846.12676056338034"/>
+        </scene>
+        <!--User ChatVC-->
+        <scene sceneID="PxD-JH-dTQ">
+            <objects>
+                <viewController storyboardIdentifier="ChatView" id="ym3-ti-FHu" customClass="UserChatVC" customModule="AMMChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nIl-u1-ukd"/>
+                        <viewControllerLayoutGuide type="bottom" id="dR6-Ev-M8C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oO1-nu-imt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GXN-Xo-hat"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wj-RB-gB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651" y="1198"/>
         </scene>
         <!--Найти друзей-->
         <scene sceneID="ZKT-M9-3AS">
@@ -1067,6 +1087,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.24356809258460999" green="0.56520485877990723" blue="0.98565036058425903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

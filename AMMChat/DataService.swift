@@ -57,6 +57,10 @@ class DataService {
         return _REF_NEWS
     }
     
+    var REF_FRIENDLIST_ALL: FIRDatabaseReference {
+        return _REF_FRIENDLIST
+    }
+    
     var REF_FRIENDLIST: FIRDatabaseReference {
         let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
         let path = _REF_FRIENDLIST.child(uid!)

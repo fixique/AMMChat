@@ -43,6 +43,9 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
   - GTMSessionFetcher/Core (1.1.9)
+  - JSQMessagesViewController (7.3.4):
+    - JSQSystemSoundPlayer (~> 2.0.1)
+  - JSQSystemSoundPlayer (2.0.1)
   - SwiftKeychainWrapper (3.0.1)
   - TOCropViewController (2.0.12)
 
@@ -52,6 +55,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - JSQMessagesViewController
   - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
@@ -66,9 +70,11 @@ SPEC CHECKSUMS:
   FirebaseStorage: a5c55b23741a49a72af8f30f95b3bb5ddbeda12d
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  JSQMessagesViewController: 39fed975e3c9f8eba7292071e29eeb541d105e66
+  JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   TOCropViewController: e6e31b38d785a901e5651a1e7fff71bcda6c5214
 
-PODFILE CHECKSUM: 5d10bb4d1c227e15a95ff43d3f23b6b28e6c0995
+PODFILE CHECKSUM: 10195ee71b49c451a80c6893ac26fc38bf74861a
 
 COCOAPODS: 1.2.0

@@ -74,6 +74,7 @@ class searchFriendsCell: UITableViewCell {
                 self.addBtn.image = nil
                 let uid = UUID().uuidString
                 DataService.ds.REF_FRIENDLIST.updateChildValues([self.userID : self.userID])
+                DataService.ds.REF_FRIENDLIST_ALL.child(self.userID).updateChildValues([currentUser.snapKey : currentUser.snapKey])
                 DataService.ds.REF_CHANNELS.child(uid).updateChildValues(["messages" : ""])
                 DataService.ds.REF_USERCHATS.child(currentUser.snapKey).child(uid).updateChildValues(["secondUser" : self.userID])
                 DataService.ds.REF_USERCHATS.child(self.userID).child(uid).updateChildValues(["secondUser" : currentUser.snapKey])

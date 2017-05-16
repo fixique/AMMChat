@@ -80,6 +80,17 @@ class ChatsVC: MainVC, UITableViewDelegate, UITableViewDataSource {
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let item = chats[indexPath.row]
+        let user = users[indexPath.row]
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let chatVC = mainStoryboard.instantiateViewController(withIdentifier: "ChatView") as! UserChatVC
+        chatVC.secondUser = user
+        chatVC.channel = item
+        self.navigationController?.pushViewController(chatVC, animated: true)
+    }
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
     }
