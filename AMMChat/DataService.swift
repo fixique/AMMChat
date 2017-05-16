@@ -23,11 +23,21 @@ class DataService {
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_NEWS = DB_BASE.child("news")
     private var _REF_FRIENDLIST = DB_BASE.child("friendlist")
+    private var _REF_CHANNELS = DB_BASE.child("channels")
+    private var _REF_USERCHATS = DB_BASE.child("user_chats")
     
     // Storage references
     private var _REF_STORAGE_BASE = FIRStorage.storage()
     private var _REF_TO_USER_AVATARS = STORAGE_BASE.child("avatars")
     private var _REF_TO_POST_IMAGES = STORAGE_BASE.child("news")
+    
+    var REF_USERCHATS: FIRDatabaseReference {
+        return _REF_USERCHATS
+    }
+    
+    var REF_CHANNELS: FIRDatabaseReference {
+        return _REF_CHANNELS
+    }
     
     var REF_BASE: FIRDatabaseReference {
         return _REF_BASE

@@ -72,7 +72,11 @@ class searchFriendsCell: UITableViewCell {
         addRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let _ = snapshot.value as? NSNull {
                 self.addBtn.image = nil
+                let uid = UUID().uuidString
                 DataService.ds.REF_FRIENDLIST.updateChildValues([self.userID : self.userID])
+                DataService.ds.REF_CHANNELS.child(uid).updateChildValues(["messages" : ""])
+                DataService.ds.REF_USERCHATS.child(currentUser.snapKey).child(uid).updateChildValues(["secondUser" : self.userID])
+                DataService.ds.REF_USERCHATS.child(self.userID).child(uid).updateChildValues(["secondUser" : currentUser.snapKey])
             } else {
                 self.addBtn.image = #imageLiteral(resourceName: "addFriendBtn")
                 

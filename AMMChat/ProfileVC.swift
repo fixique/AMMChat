@@ -18,9 +18,11 @@ class ProfileVC: MainVC, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     static var userAvatars: [UserAvatar] = []
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
     var firendsList = [User]()
     var activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
     var layer: UIView! = nil
+    private var firendListHandle: FIRDatabaseHandle?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,16 +45,7 @@ class ProfileVC: MainVC, UITableViewDelegate, UITableViewDataSource {
         activityIndicator.startAnimating()
         self.view.addSubview(layer)
         
-//        DataService.ds.REF_FRIENDLIST.observe(.value, with: { (snapshot) in
-//            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
-//                self.firendsList.removeAll()
-//                for snap in snapshot {
-//                    let friend = User(snapshot: snap)
-//                    self.firendsList.append(friend)
-//                }
-//            }
-//            self.tableView.reloadData()
-//        })
+
 
         
     }
@@ -70,19 +63,61 @@ class ProfileVC: MainVC, UITableViewDelegate, UITableViewDataSource {
             })
             
         }
+        
+        firendListHandle = DataService.ds.REF_FRIENDLIST.observe(.value, with: { (snapshot) in
+            if snapshot.exists() {
+                if let dict = snapshot.value as? Dictionary<String, String> {
+                    self.firendsList.removeAll()
+                    for value in dict.values.sorted() {
+                        DataService.ds.REF_USERS.child(value).observeSingleEvent(of: .value, with: { (snapshot) in
+                            if snapshot.exists() {
+                                let friend = User(snapshot: snapshot)
+                                print(friend.userName)
+                                self.self.firendsList.append(friend)
+                                self.self.tableView.reloadData()
+                            }
+                        })
+                    }
+                }
+            }
+        })
     }
+    
+    deinit {
+        if let refHandle = firendListHandle {
+            DataService.ds.REF_FRIENDLIST.removeObserver(withHandle: refHandle)
+            print("hey")
+        }
+        
+    }
+
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let friend = self.firendsList[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "friendlistCell") as? friendListCell {
-            cell.configureCell(item: friend)
-            
+            if let img = ProfileVC.imageCache.object(forKey: friend.avatar as NSString) {
+                cell.configureCell(item: friend, img: img)
+            } else {
+                cell.configureCell(item: friend)
+            }
             return cell
         } else {
-            return friendListCell()
+            return NewsItemCell()
         }
+        
+        
+        
+//        let friend = self.firendsList[indexPath.row]
+//        
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: "friendlistCell") as? friendListCell {
+//            cell.configureCell(item: friend)
+//            print("cool")
+//            return cell
+//        } else {
+//            return friendListCell()
+//        }
     }
 
     

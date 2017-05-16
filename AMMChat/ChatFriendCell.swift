@@ -1,29 +1,27 @@
 //
-//  friendListCell.swift
+//  ChatFriendCell.swift
 //  AMMChat
 //
-//  Created by Vlad Krupenko on 05.05.17.
+//  Created by Vlad Krupenko on 16.05.17.
 //  Copyright © 2017 JaneSV. All rights reserved.
 //
 
 import UIKit
 import Firebase
 
-class friendListCell: UITableViewCell {
+class ChatFriendCell: UITableViewCell {
 
-    @IBOutlet weak var userAvatar: UIImageView!
-    @IBOutlet weak var userName: UILabel!
-    @IBOutlet weak var userCourse: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var userImage: UIImageView!
     
-
+    
     func configureCell(item: User, img: UIImage? = nil) {
-        userName.text = item.userName
-        userCourse.text = item.course
-        userAvatar.layer.cornerRadius = 55 / 2
-        userAvatar.clipsToBounds = true
+        titleLabel.text = item.userName
+        userImage.layer.cornerRadius = 55 / 2
+        userImage.clipsToBounds = true
         
         if img != nil {
-            self.userAvatar.image = img
+            self.userImage.image = img
         } else {
             let ref = FIRStorage.storage().reference(forURL: item.avatar)
             ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
@@ -33,7 +31,7 @@ class friendListCell: UITableViewCell {
                     print("LOG:: Image download from Firebase storage")
                     if let imgData = data {
                         if let img = UIImage(data: imgData) {
-                            self.userAvatar.image = img
+                            self.userImage.image = img
                             ProfileVC.imageCache.setObject(img, forKey: item.avatar as NSString)
                         }
                     }
@@ -42,6 +40,5 @@ class friendListCell: UITableViewCell {
         }
         
     }
-    
 
 }

@@ -70,8 +70,6 @@ class EditProfileVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        
-        
         return courses.count
     }
     
